@@ -1,0 +1,41 @@
+/*
+ * Benedikt Laux Skeleton_Website alphav1.0
+ * Copyright 2018 Benedikt Laux, Inc
+ * Licensed under
+ */
+ /*****Body*****/
+ /*****Top Nav Bar*****/
+ .top_navbar{
+   background-color: lightblue;
+   text-align: right;
+ }
+ .top_navbar li{
+    display: inline-block;
+ }
+
+ /*****main Nav Bar*****/
+ #main_navbar{
+   width: 80%;
+   margin: auto;
+ }
+ #main_navbar li{
+    display: inline-block;
+ }
+
+
+ /*****log entry date*****/
+ .log_entry{
+
+ }
+ .log_entry li{
+    display: inline-block;
+  }
+
+ /***** Social Icons *****/
+ .social_icons ol{
+  padding-left: 0px;
+ }
+ .social_icons li{
+    display: inline-block;
+ }
+ /***** FOOTER *****/
