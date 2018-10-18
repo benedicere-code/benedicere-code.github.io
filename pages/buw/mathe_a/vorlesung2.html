@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Mathe A Dr.Wyss-WS18/19-Vorlesung2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Mathe A Dr-Wyss-WS18/19-Vorlesung2</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11808,7 +11808,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Büro: G.15.03<br>
 Sprechstd. : Di. 15-16 Uhr<br>
-<a href="https://moodle.uni-wuppertal.de/course/view.php?id=15374">moodle</a>-Seite-Key: ---Nur für Studenten---
+<a href="https://moodle.uni-wuppertal.de/course/view.php?id=15374">moodle</a>-Seite-Key: --------
 Start Übung: Mo. 22.10<br>
 Übungsblatt: 4 Aufgaben$\rightarrow$Lösung in Übung, <strong>1<u>Bonus</u>Aufgabe$\longrightarrow$ selbst rechnen &amp; Abgeben!!</strong> neues Blatt jeden Freitag auf moodle.<br>
 <strong>Abgabe Bonusaufgabe: bis Di. 16Uhr | D.13</strong><br>
@@ -11822,7 +11822,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.1 - 12.10.2018&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.2 - 12.10.2018&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11839,7 +11839,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Vorlesung - Nr.1 - 12.10.2018
+<pre>Vorlesung - Nr.2 - 12.10.2018
 </pre>
 </div>
 </div>
@@ -11854,14 +11854,15 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section0'></a></p>
 <h1 id="Inhaltsverzeichnis:"><a href="#section0">Inhaltsverzeichnis</a>:<a class="anchor-link" href="#Inhaltsverzeichnis:">&#182;</a></h1><ol>
-<li><p><a href="#section1">Kapitel: Allgemeine Grundlagen</a><br>
- 1.1.  <a href="#section11">Mengen</a><br>
- 1.2.  <a href="#section12">Angaben von Mengen</a><br>
- 1.3.  <a href="#section13">Grundlegende Menge</a><br>
- 1.4.  <a href="#section14">Teilmengen</a><br>
- 1.5.  <a href="#section15">Mengen</a><br>
- 1.V.  <a href="#section1va">Vorlesungsaufgabe(12.10.18)</a></p>
-</li>
+<li><a href="#section1">Kapitel: Allgemeine Grundlagen</a><br>
+ 1.6.  <a href="#section16">Logische Symbole</a><br>
+ 1.7.  <a href="#section17">Menegenoperationen</a><br>
+ 1.8.  <a href="#section18">Produkt von Mengen</a><br>
+ 1.9.  <a href="#section19">Intervalle</a><br>
+ 1.10.  <a href="#section110">Beispiele:</a><br>
+ 1.11.  <a href="#section111">Rechenregeln für Ungleichungen</a><br>
+ 1.12.  <a href="#section112">Beispiele(Lösungsmengen von Ungleichungen)</a><br>
+ 1.V.  <a href="#section1va">Vorlesungsaufgabe(12.10.18)</a> </li>
 <li></li>
 <li></li>
 </ol>
@@ -11875,15 +11876,16 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section1'></a></p>
 <h2 id="Kapitel-1-Allgemeine-Grundlagen:">Kapitel 1 Allgemeine Grundlagen:<a class="anchor-link" href="#Kapitel-1-Allgemeine-Grundlagen:">&#182;</a></h2><p><u></u>
-<a id='section11'></a></p>
-<h2 id="1.1-Mengen:">1.1 Mengen:<a class="anchor-link" href="#1.1-Mengen:">&#182;</a></h2><p>Wir fassen Zahlen zu <strong>Mengen</strong> von Zahlen zusammen.<br>
-Schreibweise:
-$x\in M$: die Zahl x gehört zur Menge M, "x ist Element von M"<br>
-$x\notin M$: x ist <u>nicht Element</u> von M.</p>
-<p><u>Bemerkung:</u>
-Elemente einer Menge können auch Punkte, Vektoren oder andere mathematische Objekte sein.</p>
-<p><u>Leere Menge:</u>
-enthält keine Elemente. Symbol: $\large\emptyset (oder \{ \})$</p>
+<a id='section16'></a></p>
+<h2 id="1.6-Logische-Symbole:">1.6 Logische Symbole:<a class="anchor-link" href="#1.6-Logische-Symbole:">&#182;</a></h2><p>$\left.\begin{array}{rrr}
+\wedge &amp; \text{und} &amp; \text{Konjunktion}  \\
+\vee &amp; \text{oder} &amp; \text{Disjunktion}  \\
+\Longrightarrow &amp; \underset{\text{daraus folgt}}{\text{wenn dann}} &amp; \text{Implikation}  \\
+\Longleftrightarrow &amp; \text{und} &amp; \text{Äquivalenz}  \\
+\end{array}\right.$</p>
+<p><u>**Bsp:**</u><br>
+$x=7\Longrightarrow x^2=49\quad\vert\ \text{aber nicht }"\Longleftrightarrow"\\
+x=7\ \vee\ x=-7\Longleftrightarrow x^2=49$</p>
 
 </div>
 </div>
@@ -11892,16 +11894,17 @@ enthält keine Elemente. Symbol: $\large\emptyset (oder \{ \})$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section12'></a></p>
-<h2 id="1.2-Angaben-von-Mengen:">1.2 Angaben von Mengen:<a class="anchor-link" href="#1.2-Angaben-von-Mengen:">&#182;</a></h2><ol>
-<li><p>durch Angabe der Elemente, z.B. $M=\{x_1,x_2,...,x_n\}(\text{endliche Menge})$<br>
-$M=\{x_1,x_2,x_3,...\}(\text{unendliche Menge})$</p>
-</li>
-<li><p>durch Bedingung, die die Elemente der Menge erfüllen müssen:<br>
-$M=\{x\vert\text{Bedingung an }x\}$ Bedingung z.B. Formel<br>
-$M=\{x\in N\vert\text{Bedingung an }x\}$ nur Elemente $x$ aus vorgegebener Menge $N$</p>
-</li>
-</ol>
+<p><a id='section17'></a></p>
+<h2 id="1.7-Menegenoperationen:">1.7 Menegenoperationen:<a class="anchor-link" href="#1.7-Menegenoperationen:">&#182;</a></h2><p>Vereinigung: $\large M\cup N=\left\{x\ \right\vert\ x\in M\vee x\in N\}$</p>
+<p>Schnitt: $\large M\cap N=\left\{x\ \right\vert\ x\in M\wedge x\in N\}$</p>
+<p>Differenz(Restmenge): $\large \underset{\text{"M ohne N"}}{M\backslash N}=\left\{x\ \right\vert\ x\in M\wedge x\notin N\}$</p>
+<p><u>Beachte: </u> $x\in M\cup N$ gilt auch, wenn $x\in M$ und $x\in N$ D.h. das mathematische Oder $"\vee"$  bedeutet nicht entweder-oder.<br>
+D.h. $x\in M\vee x\in N$ gilt wenn:<br>
+$i)\ x\in M\text{ und } x\notin N\\
+ii)\ x\notin M\text{ und } x\in N\\
+iii)\ x\in M\text{ und } x\in N$</p>
+<p><u>**Bsp:**</u>: $I=\mathbb{R}\backslash\mathbb{Q}\rightarrow$ Menge der Irrationalen Zahlen<br>
+$\Longrightarrow \mathbb{R}=\mathbb{Q}\cup I, \mathbb{Q}\cap I=\emptyset$</p>
 
 </div>
 </div>
@@ -11910,24 +11913,14 @@ $M=\{x\in N\vert\text{Bedingung an }x\}$ nur Elemente $x$ aus vorgegebener Menge
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section13'></a></p>
-<h2 id="1.3-Grundlegende-Menge:">1.3 Grundlegende Menge:<a class="anchor-link" href="#1.3-Grundlegende-Menge:">&#182;</a></h2><p>$\large\begin{array}{ll}
-\mathbb{N} &amp; =\{0,1,2,3,...\}\text{Menge der Natürlichen Zahlen (mit Null)}\\
-\mathbb{N}^* &amp; =\{1,2,3,4,...\}\text{Menge der Natürlichen Zahlen (ohne Null)}\\
-\mathbb{Z} &amp; =\{1,2,3,4,...\}\text{Menge der ganzen Zahlen}\\
-\mathbb{Q} &amp; =\text{Menge aller Brüche}\\
- &amp; =\{x\ \vert\ x=\frac{m}{n}, m\in\mathbb{Z}n\in\mathbb{N}^*\}\text{rationale Zahlen}\\
-\end{array}$<br>
-Jeder Bruch lässt sich als endlicher oder periodischer Dezimal Bruch schreiben $\frac{7}{4}=1,75;\ \frac{23}{22}=1,0454545... $<br>
-Also<br>
-$\large\begin{array}{ll}
-\mathbb{Q} &amp; =\{x\ \vert\ x\ \text{endlicher oder periodischer Dezimalbruch}\}\\
-\end{array}$</p>
-<p><strong><u>Reele Zahlen:</u></strong><br>
-$\large\begin{array}{ll}
-\mathbb{R} &amp; =\{x\ \vert\ x\ \text{ist (beliebiger) Dezimalbruch}\}\end{array}$<br>
-$\mathbb{R}$ Enthält auch <u>irrationale Zahlen</u>, d.h. unendlich nicht periodische Dezimalbrüche<br>
-Bsp. für irrationale Zahl: $\sqrt{2}=1,414213....$</p>
+<p><a id='section18'></a></p>
+<h2 id="1.8-Produkt-von-Mengen:">1.8 Produkt von Mengen:<a class="anchor-link" href="#1.8-Produkt-von-Mengen:">&#182;</a></h2><p>Zu $a\in M, b\in N$ gibt es das Paar $(a,b)$. Die Menge aller Paare heißt (<a href="https://de.wikipedia.org/wiki/Kartesisch">kartesisches</a>) <u>Produkt</u> von $M$ und $N:$<br>
+$M\times N=\left\{(a,b)\ \right\vert\ a\in M, b\in N\}$</p>
+<p><u>**Bsp:**</u><br>
+$1)\ M=\{0,1\},N=\{1,2,3\}\\
+M\times N=\{(0,1),(0,2),(0,3),(1,1),(1,2),(1,3)\}\\
+2)\text{Für }x\in\mathbb{R},y\in\mathbb{R}\text{ beschreibt }(x,y)\text{ den Punkt im kartesischen Koordinatensystem mit Koorinaten }x,y\\
+\Longrightarrow\mathbb{R}\times\mathbb{R}\text{ beschreibt die Koordinatenebene (alle Punkte)}$</p>
 
 </div>
 </div>
@@ -11936,10 +11929,17 @@ Bsp. für irrationale Zahl: $\sqrt{2}=1,414213....$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section14'></a></p>
-<h2 id="1.4-Teilmengen:">1.4 Teilmengen:<a class="anchor-link" href="#1.4-Teilmengen:">&#182;</a></h2><p>$M$ ist Teilmenege von $N$, wenn alle Elemente von $M$ auch zu der MEnge $N$ gehören.<br>
-Schreibweise: $M\subset N$<br>
-Bsp: $\Large\mathbb{N}^*\subset\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$</p>
+<p><a id='section19'></a></p>
+<h2 id="1.9-Intervalle:">1.9 Intervalle:<a class="anchor-link" href="#1.9-Intervalle:">&#182;</a></h2><p>Ein Intervall enthält die Menge aller reelen Zahlen zwischen zwei Zahlen $a$ und $b:(a&lt;b)$<br>
+$]a,b[=\left\{x\in\mathbb{R}\ \right\vert\ a&lt;x&lt;b\}\quad\underline{\text{offenes}} \text{ Intervall}\\
+[a,b]=\left\{x\in\mathbb{R}\ \right\vert\ a\leq x\leq b\}\quad\underline{\text{geschlossenes}} \text{ Intervall}\\
+[a,b[=\left\{x\in\mathbb{R}\ \right\vert\ a\leq x&lt;b\}\quad\text{(nach rechts) }\underline{\text{halb-offenes}} \text{ Intervall}\\
+]a,b]=\left\{x\in\mathbb{R}\ \right\vert\ a&lt;x\leq b\}\quad\text{(nach links) }\underline{\text{halb-offens}} \text{ Intervall}$</p>
+<p>Die Randpunkte $a,b$ gehören also bei "abgeschlossen" dazu, bei "offen" $\color{red}{\text{nicht}}$ dazu</p>
+<p>IMG_einfügen Intervall Strahl</p>
+<p>unbeschränkte("unenedliche") Intervalle:<br>
+$]a,\infty[=\left\{x\in\mathbb{R}\right\vert\ a&lt;x\},]-\infty,b[=\left\{x\in\mathbb{R}\right\vert\ x&lt;b\}\\
+[a,\infty[=\left\{x\in\mathbb{R}\right\vert\ a&gt;x\},]-\infty,b]=\left\{x\in\mathbb{R}\right\vert\ x\leq b\}$</p>
 
 </div>
 </div>
@@ -11948,15 +11948,76 @@ Bsp: $\Large\mathbb{N}^*\subset\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subs
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section15'></a></p>
-<h2 id="1.5-Bspe:">1.5 Bspe:<a class="anchor-link" href="#1.5-Bspe:">&#182;</a></h2><p>a) Menge der ohne Rest durch 5 teilbaren natürlichen Zahlen:<br>
-$\begin{array}{ll}
-A &amp; =\{0,5,10,15,20,...\}\\
- &amp; =\{x\ \vert\ x=5n,n\in\mathbb{N}\}\\
-  &amp; =\{5n\ \vert\ n\in\mathbb{N}\}
-\end{array}$</p>
-<p>b) alle rellen Lösungen von $x^3-2x^2-1=0$:<br>
-$B=\{x\in\mathbb{R}\ \vert\ x^3-2x^2-1=0\}$</p>
+<p><a id='section110'></a></p>
+<h2 id="1.10-Beispiele:">1.10 Beispiele:<a class="anchor-link" href="#1.10-Beispiele:">&#182;</a></h2><p>$\large{]0,1[\cup[1,2]=]0,2]\\
+]0,1[\cap[-\frac{1}{2},\frac{1}{2}]=]0,\frac{1}{2}[\\
+]0,1[\cup]1,2[=]0,2[\backslash\{1\}\\
+[-1,3]\backslash]0,1[=[-1,0]\cup[1,3]}$</p>
+<p><strong>IMG einfügen</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section111'></a></p>
+<h2 id="1.11-Rechenregeln-f&#252;r-Ungleichungen:">1.11 Rechenregeln f&#252;r Ungleichungen:<a class="anchor-link" href="#1.11-Rechenregeln-f&#252;r-Ungleichungen:">&#182;</a></h2><p>$x&lt;y\Leftrightarrow x+a&lt;y+a\quad\text{für jedes }a=\mathbb{R}\\
+\text{Für }a&gt;0: x&lt;y\Leftrightarrow ax&lt;ay\\
+\text{Für }a&lt;0: x&lt;y\Leftrightarrow ax&gt;ay$<br>
+<strong>Multiplikation mit negativer Zahl dreht das Ungleichungszeichen!!</strong></p>
+<p>$\text{Für }x,y&gt;0: x&lt;y\Leftrightarrow \frac{1}{y}&lt;\frac{1}{x}$<br>
+Entsprechende Regeln für $"\leq"$ statt $"&lt;"$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section112'></a></p>
+<h2 id="1.12-Beispiele(L&#246;sungsmengen-von-Ungleichungen):">1.12 Beispiele(L&#246;sungsmengen von Ungleichungen):<a class="anchor-link" href="#1.12-Beispiele(L&#246;sungsmengen-von-Ungleichungen):">&#182;</a></h2><p>$\large1) \text{Finde alle } x\in\mathbb{R} \text{ für die } -7x-1&lt;13 \text{ gilt. D.h. bestimme die Menge }$</p>
+<p>$\large A=\left\{x\in\mathbb{R}\ \right\vert\ -7x-1&lt;13\}\\
+-7x-1&lt;13\Leftrightarrow-7x&lt;14\Leftrightarrow x&gt;\frac{14}{-7}=-2$</p>
+<p>Also ist $A=\left\{x\in\mathbb{R}\ \right\vert\ x&gt;-2\}=]-2,\infty[$</p>
+<p>$\large2)\text{Bestimme}\\
+\large B=\left\{x\in\mathbb{R}\ \right\vert\ -6\leq3x&lt;2x-1\}$</p>
+<p>$-6\leq3x&lt;2x-1\Leftrightarrow\underbrace{-6\leq3x}_{I}\wedge\underbrace{3x&lt;2x-1}_{II}\\
+\\
+\left.\begin{array}{r}I:\ -6\leq3x\Leftrightarrow-2\leq x\\
+II:\ 3x&lt;2x-1\Leftrightarrow x&lt;-1\end{array}\right\}\text{Also }I\wedge II\Leftrightarrow-2\leq x\wedge x&lt;-1\Leftrightarrow-2 x&lt;-1\Rightarrow B=\left\{x\in\mathbb{R}\ \right\vert\ -2\leq x&lt;-1\}=\color{green}{[-2,-1[}$</p>
+<p>$\large3)C=\left\{x\in\mathbb{R}\ \right\vert\ \frac{x-1}{x+1}&lt;-2,x\neq-1\}$</p>
+<p>$\frac{x-1}{x+1}&gt;-2 \longrightarrow\text{Multipliziere mit }x+1\\
+\longrightarrow\text{2 Fälle:} \begin{array}{r}
+x+1&gt;0\Leftrightarrow x&gt;-1\\
+x+1&lt;0\Leftrightarrow x&lt;-1\end{array}$</p>
+<p>$\underline{\text{1.Fall }x&gt;-1:}\\
+\frac{x-1}{x+1}&gt;-2\overset{x+1&gt;0}{\Longleftrightarrow} x-1&gt;-2(x+1)\\
+\Leftrightarrow x-1&gt;-2x-2\\
+\Leftrightarrow 3x&gt;-2+1=-1\Leftrightarrow x&gt;-\frac{1}{3}\quad also:\ (x&gt;-1\wedge x&gt;-\frac{1}{3})\\
+\Leftrightarrow x&gt;-\frac{1}{3}\\
+\Leftrightarrow ]-\frac{1}{3},\infty[$</p>
+<p>$\underline{\text{2.Fall }x&lt;-1:}\\
+\frac{x-1}{x+1}&gt;-2\overset{x+1&lt;0}{\Longleftrightarrow} x-1&lt;-2(x+1)\\
+\Leftrightarrow x-1&lt;-2x-2\Leftrightarrow 3x&lt;-1\Leftrightarrow x&lt;-\frac{1}{3}\\
+Also:\ (x&lt;-1\wedge x&lt;-\frac{1}{3})\Leftrightarrow x&lt;-1\\
+\large\text{Gesamtlösung(1.Fall }\underline{\text{oder}}\text{ 2.Fall)}\\
+x&gt;-\frac{1}{3}\vee x&lt;-1\\
+C=\left\{x\in\mathbb{R}\ \right\vert\ x&gt;-\frac{1}{3}\vee x&lt;-1\}=\left\{x\in\mathbb{R}\ \right\vert\ x&gt;-\frac{1}{3}\}\cup \left\{x\in\mathbb{R}\ \right\vert\ x&lt;-1\}\\
+\large= ]-\frac{1}{3},\infty[\cup]-\infty,-1[$</p>
+<p>$\large4)D=\left\{x\in\mathbb{R}\ \right\vert\ \frac{x}{x-2}&lt;-2,x\neq-1\}$</p>
+<p>$\underline{\text{1.Fall }:}x-2&gt;0\Leftrightarrow x&gt;2\\
+\frac{x}{x-2}\geq-2\overset{x-2&gt;0}{\Longleftrightarrow} x\geq3(x-2)\\
+\Leftrightarrow x\geq3x-6\Leftrightarrow 6\geq2x\Leftrightarrow 3\geq x\\
+(x&gt;2\wedge x\leq3)\Leftrightarrow 2&lt;x\leq3$</p>
+<p>$\underline{\text{2.Fall }:}x-2&lt;0\Leftrightarrow x&lt;2\\
+\frac{x}{x-2}\geq-2\overset{x-2&lt;0}{\Longleftrightarrow} x\leq3(x-2)=3x-6\\
+\Leftrightarrow 6\leq2x\Leftrightarrow 3\leq x\\
+\Leftrightarrow (x&lt;2\wedge\geq3)\Leftrightarrow\text{Wiederspruch}↯$</p>
+<p>$\large\text{Nur 1.Fall möglich}\Longrightarrow D=\left\{x\in\mathbb{R}\ \right\vert\ 2&lt;x\leq3\}\\
+\large=]2,3]$</p>
 
 </div>
 </div>
@@ -11966,22 +12027,36 @@ $B=\{x\in\mathbb{R}\ \vert\ x^3-2x^2-1=0\}$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section1va'></a></p>
-<h2 id="Vorlesungsaufgabe(12.10.18):">Vorlesungsaufgabe(12.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(12.10.18):">&#182;</a></h2><p>Geben Sie alle Mengen in der Form$\{x\in .....\}$an</p>
-<p>$\large\begin{array}{ll}
-A&amp; =\text{Menge aller negativen rationalen Zahlen}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{Q}\ \vert\ x&lt;0\}\text{Musterlösung}\\
-\end{array}$</p>
-<p>$\large\begin{array}{ll}
-B &amp; =\text{Menge aller nicht durch 3 teilbaren Zahlen}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{N}\ \vert\ \frac{x}{3}\notin\mathbb{N}\}\text{Musterlösung}\\
-\end{array}$</p>
-<p>$\large\begin{array}{ll}
-C &amp; =\text{Menge aller irrationalen Lösungen von }{\frac{1-x^2}{1+x^2}=x^3}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{R}, x\notin\mathbb{Q}\ \vert\ {\frac{1-x^2}{1+x^2}=x^3}\}\text{Musterlösung}\\
-\end{array}$</p>
+<h2 id="Vorlesungsaufgabe(17.10.18):">Vorlesungsaufgabe(17.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(17.10.18):">&#182;</a></h2><p>$\large1)A=\left\{x\in\mathbb{R}\ \right\vert\ 2x-3\leq0\leq-x+1\}$</p>
+<p>$\large2)B=\left\{x\in\mathbb{R}\ \right\vert\ \frac{x+2}{x-1}&lt;-1,x\neq1\}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>$\large1)A=\left\{x\in\mathbb{R}\ \right\vert\ 2x-3\leq0\leq-x+1\}\\
+\text{2 Fälle:}\\
+2x-3\leq0\quad \wedge\ 0\leq-x+1\\
+x\leq\frac{3}{2}\quad \wedge\ 1\geq x\\
+1\geq x\leq\frac{3}{2}\Longleftrightarrow x\leq1\\
+\Longrightarrow A=\left\{x\in\mathbb{R}\ \right\vert\ x\leq1\}=]-\infty,1]$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>$\large2)B=\left\{x\in\mathbb{R}\ \right\vert\ \frac{x+2}{x-1}&lt;-1,x\neq1\}\\
+\text{2 Fälle: }x+1&lt;0\quad \vee\ x+1&gt;0\\
+\frac{x+2}{x-1}&lt;-1\quad \wedge\ \frac{x+2}{x-1}&lt;-1,x\neq1\\
+\Leftrightarrow x+2&lt;-1\cdot(x+1)\quad \wedge\ x+2&gt;-1(x+1)\\
+\leq\frac{3}{2}\Longleftrightarrow x\leq1\\
+\Longrightarrow A=\left\{x\in\mathbb{R}\ \right\vert\ x\leq1\}=]-\infty,1]$</p>
 
 </div>
 </div>
