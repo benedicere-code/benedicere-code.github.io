@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11808,7 +11808,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Büro: G.15.03<br>
 Sprechstd. : Di. 15-16 Uhr<br>
-<a href="https://moodle.uni-wuppertal.de/course/view.php?id=15374">moodle</a>-Seite-Key: ---Nur für Studenten---
+<a href="https://moodle.uni-wuppertal.de/course/view.php?id=15374">moodle</a>-Seite-Key: --------
 Start Übung: Mo. 22.10<br>
 Übungsblatt: 4 Aufgaben$\rightarrow$Lösung in Übung, <strong>1<u>Bonus</u>Aufgabe$\longrightarrow$ selbst rechnen &amp; Abgeben!!</strong> neues Blatt jeden Freitag auf moodle.<br>
 <strong>Abgabe Bonusaufgabe: bis Di. 16Uhr | D.13</strong><br>
@@ -11822,7 +11822,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.1 - 12.10.2018&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.3 - 18.10.2018&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11839,7 +11839,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Vorlesung - Nr.1 - 12.10.2018
+<pre>Vorlesung - Nr.3 - 18.10.2018
 </pre>
 </div>
 </div>
@@ -11854,14 +11854,11 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section0'></a></p>
 <h1 id="Inhaltsverzeichnis:"><a href="#section0">Inhaltsverzeichnis</a>:<a class="anchor-link" href="#Inhaltsverzeichnis:">&#182;</a></h1><ol>
-<li><p><a href="#section1">Kapitel: Allgemeine Grundlagen</a><br>
- 1.1.  <a href="#section11">Mengen</a><br>
- 1.2.  <a href="#section12">Angaben von Mengen</a><br>
- 1.3.  <a href="#section13">Grundlegende Menge</a><br>
- 1.4.  <a href="#section14">Teilmengen</a><br>
- 1.5.  <a href="#section15">Mengen</a><br>
- 1.V.  <a href="#section1va">Vorlesungsaufgabe(12.10.18)</a></p>
-</li>
+<li><a href="#section1">Kapitel: Allgemeine Grundlagen</a><br>
+ 1.13.  <a href="#section113">Betrag</a><br>
+ 1.14.  <a href="#section114">Beispiele</a><br>
+ 1.V.  <a href="#section1va">Vorlesungsaufgabe(18.10.18)</a><br>
+ 1.15.  <a href="#section115">Produkt von Mengen</a>  </li>
 <li></li>
 <li></li>
 </ol>
@@ -11875,15 +11872,156 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section1'></a></p>
 <h2 id="Kapitel-1-Allgemeine-Grundlagen:">Kapitel 1 Allgemeine Grundlagen:<a class="anchor-link" href="#Kapitel-1-Allgemeine-Grundlagen:">&#182;</a></h2><p><u></u>
-<a id='section11'></a></p>
-<h2 id="1.1-Mengen:">1.1 Mengen:<a class="anchor-link" href="#1.1-Mengen:">&#182;</a></h2><p>Wir fassen Zahlen zu <strong>Mengen</strong> von Zahlen zusammen.<br>
-Schreibweise:
-$x\in M$: die Zahl x gehört zur Menge M, "x ist Element von M"<br>
-$x\notin M$: x ist <u>nicht Element</u> von M.</p>
-<p><u>Bemerkung:</u>
-Elemente einer Menge können auch Punkte, Vektoren oder andere mathematische Objekte sein.</p>
-<p><u>Leere Menge:</u>
-enthält keine Elemente. Symbol: $\large\emptyset (oder \{ \})$</p>
+<a id='section113'></a></p>
+<h2 id="1.13-Betrag:">1.13 Betrag:<a class="anchor-link" href="#1.13-Betrag:">&#182;</a></h2><p>Für $a\in\mathbb{R}$ ist der Betrag $\vert a\vert$ definiert durch</p>
+<p>$\left\vert a\right\vert=\left\{\begin{array}{rr}
+a, &amp; wenn\ a\geq0\\
+-a, &amp; wenn\ a&lt;0
+\end{array}\right.$</p>
+<h3 id="**Bsp:**"><u>**Bsp:**</u><a class="anchor-link" href="#**Bsp:**">&#182;</a></h3><p>$\large{\left\vert 6\right\vert=\left\vert -6\right\vert=6\\
+\text{Regeln:}\left\vert -a\right\vert=\left\vert a\right\vert,\ \left\vert ab\right\vert=\left\vert a\right\vert\cdot\left\vert b\right\vert\\
+\left\vert \frac{a}{b}\right\vert=\frac{\left\vert a\right\vert}{\left\vert a\right\vert}}\\
+\text{Bei Summe gilt nur }\underline{\text{Dreiecksgleichung:}}\\
+\left\vert a+b\right\vert\leq\left\vert a\right\vert+\left\vert a\right\vert\\
+\left\vert a-b\right\vert=\text{ Abstand zweier Zahlen }a,b\in\mathbb{R}\text{auf der Zahlengerade.}$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IMG</span> <span class="n">Zahlen</span> <span class="n">ebene</span>
+<span class="n">a</span><span class="o">&lt;</span><span class="n">b</span>
+<span class="o">---</span>
+<span class="n">a</span>\<span class="n">geq</span> <span class="n">b</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-2-1adfe86aa687&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    IMG Zahlen ebene</span>
+<span class="ansi-white-intense-fg ansi-bold">             ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section114'></a></p>
+<h2 id="1.14-Beispiele:">1.14 Beispiele:<a class="anchor-link" href="#1.14-Beispiele:">&#182;</a></h2><p>1) Für welche $x\in\mathbb{R}\ gilt\ \left\vert x-2\right\vert&lt;1$ D.h. $A=\left\{x\in\mathbb{R}\ \right\vert\ \left\vert x-2\right\vert&lt;1\}=?$</p>
+<h4 id="Betrag-$\rightarrow$-Fallunterscheidung">Betrag $\rightarrow$ Fallunterscheidung<a class="anchor-link" href="#Betrag-$\rightarrow$-Fallunterscheidung">&#182;</a></h4><p>$\underline{\text{1 Fall: }x-2\geq0\Leftrightarrow x\geq2}\\
+\text{Dann }\left\vert x-2\right\vert=x-2\\
+\text{Also }\left\vert x-2\right\vert&lt;1\Leftrightarrow x-2&lt;1\Leftrightarrow x&lt;3\Rightarrow(x\geq2\wedge x&lt;3)\Leftrightarrow2\leq x&lt;3\\
+\quad\\
+\underline{\text{2 Fall: }x-2&lt;0\Leftrightarrow x&lt;2}\\
+\text{Dann }\left\vert x-2\right\vert=-(x-2)=-x+2\\
+\text{Also }\left\vert x-2\right\vert&lt;1\Leftrightarrow -x+2&lt;1\Leftrightarrow 1&lt;x\\
+\Rightarrow(x&lt;2\wedge x&gt;1)\Leftrightarrow1&lt;x&lt;2\\
+\text{Insgesamt (1.Fall }\underline{\text{oder}}\text{ 2.Fall):}\\
+(2\leq x&lt;3)\vee(1&lt;x&lt;2)\Leftrightarrow1&lt;x&lt;3\\
+A=\left\{x\in\mathbb{R}\ \right\vert\ 1&lt;x&lt;3\}=]1,3[$</p>
+<p><u>geometrisch:</u> $\left\vert x-2\right\vert=$ Abstand von $x$ zu $2$<br>
+d.h. $\left\vert x-2\right\vert&lt;1\Leftrightarrow$ Abstand von $x$ zu $2$ ist echt kleiner als $1$:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">IMG</span> <span class="n">Zahlenstrahl</span><span class="p">,</span> <span class="o">|</span><span class="n">x</span><span class="o">-</span><span class="mi">2</span><span class="o">|</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  File </span><span class="ansi-green-intense-fg ansi-bold">&#34;&lt;ipython-input-1-a07f14c78df6&gt;&#34;</span><span class="ansi-cyan-intense-fg ansi-bold">, line </span><span class="ansi-green-intense-fg ansi-bold">1</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    IMG Zahlenstrahl, |x-2|</span>
+<span class="ansi-white-intense-fg ansi-bold">                   ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Bemerkung:--$\left\vert\-x+3\-\right\vert=\left\vert\-x-(-3)\-\right\vert=$-Abstand-von-$x$-zu-$-3$"><u>Bemerkung:</u>  $\left\vert\ x+3\ \right\vert=\left\vert\ x-(-3)\ \right\vert=$ Abstand von $x$ zu $-3$<a class="anchor-link" href="#Bemerkung:--$\left\vert\-x+3\-\right\vert=\left\vert\-x-(-3)\-\right\vert=$-Abstand-von-$x$-zu-$-3$">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>2) $B=\left\{x\in\mathbb{R}\ \right\vert\ \left\vert\ x+1\ \right\vert= 3\cdot\left\vert\ x\ \right\vert\}=?$</p>
+<h4 id="Betrag-$\rightarrow$-Fallunterscheidung">Betrag $\rightarrow$ Fallunterscheidung<a class="anchor-link" href="#Betrag-$\rightarrow$-Fallunterscheidung">&#182;</a></h4><p>$\left\vert\ x+1\ \right\vert=\left\{\begin{array}{rr}
+x+1, &amp; wenn\ x+1\geq0\Leftrightarrow x\geq-1\\
+-(x+1), &amp; wenn\ x+1&lt;0\Leftrightarrow x&lt;-1\\
+\end{array}\right.$</p>
+<p>$\left\vert\ x\ \right\vert=\left\{\begin{array}{rr}
+x, &amp; wenn\ x\geq0\\
+-x, &amp; wenn\ x&lt;0\\
+\end{array}\right.$</p>
+<p>IMG ZAHLENSTRAHL EINFÜGEN<br>
+$\Longrightarrow$ 3Fälle</p>
+<p>$\underline{\text{1 Fall }x&lt;-1}\\
+\vert\ \underbrace{x+1}_{x+1}\ \vert= 3\cdot\vert\ \underbrace{x}_{-x}\ \vert\Leftrightarrow-(x+1)=-3x\Leftrightarrow x-2&lt;1\Leftrightarrow -x-1=-3x\Leftrightarrow2x=1\Leftrightarrow x=\frac{1}{2}\\
+x=\frac{1}{2}\text{ ist nicht kleiner als }-1,\text{ erfüllt nicht }x&lt;-1\\
+\Rightarrow Wiederspruch↯\ \Rightarrow\text{Keine Lsg. im 1.Fall}\\
+\quad\\
+\underline{\text{2 Fall: }1\leq x&lt;0:}\\
+\left\vert\ x+1\ \right\vert= 3\cdot\left\vert\ x+1\ \right\vert\Leftrightarrow x+1=-3x\Leftrightarrow 4x=-1\Leftrightarrow x=-\frac{1}{4}\\
+x=-\frac{1}{4}\text{ erfüllt }-1\leq x&lt;0\Longrightarrow x=-\frac{1}{4}\text{ ist eine Lsg.}\\
+\quad\\
+\underline{\text{3 Fall: }x\geq0}\\
+\left\vert\ x+1\ \right\vert= 3\cdot\left\vert\ x\ \right\vert\Leftrightarrow x+1=3x\Leftrightarrow 2x=1\Leftrightarrow x=\frac{1}{2}\\
+x=\frac{1}{2}\text{ erfüllt }x\geq0\Rightarrow x=\frac{1}{2}\text{ist eine Lsg.}\\
+\quad\\
+\text{Insgesamt/ Zusammen:}\\
+B=\left\{-\frac{1}{4},\frac{1}{2}\right\}$</p>
 
 </div>
 </div>
@@ -11892,71 +12030,13 @@ enthält keine Elemente. Symbol: $\large\emptyset (oder \{ \})$</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section12'></a></p>
-<h2 id="1.2-Angaben-von-Mengen:">1.2 Angaben von Mengen:<a class="anchor-link" href="#1.2-Angaben-von-Mengen:">&#182;</a></h2><ol>
-<li><p>durch Angabe der Elemente, z.B. $M=\{x_1,x_2,...,x_n\}(\text{endliche Menge})$<br>
-$M=\{x_1,x_2,x_3,...\}(\text{unendliche Menge})$</p>
-</li>
-<li><p>durch Bedingung, die die Elemente der Menge erfüllen müssen:<br>
-$M=\{x\vert\text{Bedingung an }x\}$ Bedingung z.B. Formel<br>
-$M=\{x\in N\vert\text{Bedingung an }x\}$ nur Elemente $x$ aus vorgegebener Menge $N$</p>
-</li>
-</ol>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section13'></a></p>
-<h2 id="1.3-Grundlegende-Menge:">1.3 Grundlegende Menge:<a class="anchor-link" href="#1.3-Grundlegende-Menge:">&#182;</a></h2><p>$\large\begin{array}{ll}
-\mathbb{N} &amp; =\{0,1,2,3,...\}\text{Menge der Natürlichen Zahlen (mit Null)}\\
-\mathbb{N}^* &amp; =\{1,2,3,4,...\}\text{Menge der Natürlichen Zahlen (ohne Null)}\\
-\mathbb{Z} &amp; =\{1,2,3,4,...\}\text{Menge der ganzen Zahlen}\\
-\mathbb{Q} &amp; =\text{Menge aller Brüche}\\
- &amp; =\{x\ \vert\ x=\frac{m}{n}, m\in\mathbb{Z}n\in\mathbb{N}^*\}\text{rationale Zahlen}\\
-\end{array}$<br>
-Jeder Bruch lässt sich als endlicher oder periodischer Dezimal Bruch schreiben $\frac{7}{4}=1,75;\ \frac{23}{22}=1,0454545... $<br>
-Also<br>
-$\large\begin{array}{ll}
-\mathbb{Q} &amp; =\{x\ \vert\ x\ \text{endlicher oder periodischer Dezimalbruch}\}\\
-\end{array}$</p>
-<p><strong><u>Reele Zahlen:</u></strong><br>
-$\large\begin{array}{ll}
-\mathbb{R} &amp; =\{x\ \vert\ x\ \text{ist (beliebiger) Dezimalbruch}\}\end{array}$<br>
-$\mathbb{R}$ Enthält auch <u>irrationale Zahlen</u>, d.h. unendlich nicht periodische Dezimalbrüche<br>
-Bsp. für irrationale Zahl: $\sqrt{2}=1,414213....$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section14'></a></p>
-<h2 id="1.4-Teilmengen:">1.4 Teilmengen:<a class="anchor-link" href="#1.4-Teilmengen:">&#182;</a></h2><p>$M$ ist Teilmenege von $N$, wenn alle Elemente von $M$ auch zu der MEnge $N$ gehören.<br>
-Schreibweise: $M\subset N$<br>
-Bsp: $\Large\mathbb{N}^*\subset\mathbb{N}\subset\mathbb{Z}\subset\mathbb{Q}\subset\mathbb{R}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section15'></a></p>
-<h2 id="1.5-Bspe:">1.5 Bspe:<a class="anchor-link" href="#1.5-Bspe:">&#182;</a></h2><p>a) Menge der ohne Rest durch 5 teilbaren natürlichen Zahlen:<br>
-$\begin{array}{ll}
-A &amp; =\{0,5,10,15,20,...\}\\
- &amp; =\{x\ \vert\ x=5n,n\in\mathbb{N}\}\\
-  &amp; =\{5n\ \vert\ n\in\mathbb{N}\}
-\end{array}$</p>
-<p>b) alle rellen Lösungen von $x^3-2x^2-1=0$:<br>
-$B=\{x\in\mathbb{R}\ \vert\ x^3-2x^2-1=0\}$</p>
+<h3 id="Bemerkung:"><u>Bemerkung:</u><a class="anchor-link" href="#Bemerkung:">&#182;</a></h3><p>$\left\vert\ x+1\ \right\vert\rightarrow\text{2 Fälle }x\geq-1\wedge x&lt;-1\\
+\left\vert\ x\ \right\vert\rightarrow\text{2 Fälle }x\geq0\wedge x&lt;0\\
+\Longrightarrow\text{4 Kombinationsmöglichkeiten: }\\
+1.(x\geq-1\wedge x\geq0)\Leftrightarrow x\geq0\\
+2.(x\geq-1\wedge x&lt;0)\Leftrightarrow -1\leq x&lt;0\\
+3.(x&lt;-1\wedge x\geq0)\Leftrightarrow \text{Wiederspruch ↯, Fall kommt nicht vor}\\
+4.(x&lt;-1\wedge x&lt;0)\Leftrightarrow x&lt;-1$</p>
 
 </div>
 </div>
@@ -11966,22 +12046,53 @@ $B=\{x\in\mathbb{R}\ \vert\ x^3-2x^2-1=0\}$</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section1va'></a></p>
-<h2 id="Vorlesungsaufgabe(12.10.18):">Vorlesungsaufgabe(12.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(12.10.18):">&#182;</a></h2><p>Geben Sie alle Mengen in der Form$\{x\in .....\}$an</p>
-<p>$\large\begin{array}{ll}
-A&amp; =\text{Menge aller negativen rationalen Zahlen}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{Q}\ \vert\ x&lt;0\}\text{Musterlösung}\\
-\end{array}$</p>
-<p>$\large\begin{array}{ll}
-B &amp; =\text{Menge aller nicht durch 3 teilbaren Zahlen}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{N}\ \vert\ \frac{x}{3}\notin\mathbb{N}\}\text{Musterlösung}\\
-\end{array}$</p>
-<p>$\large\begin{array}{ll}
-C &amp; =\text{Menge aller irrationalen Lösungen von }{\frac{1-x^2}{1+x^2}=x^3}\\
- &amp; = \\
- &amp; = \{x\in\mathbb{R}, x\notin\mathbb{Q}\ \vert\ {\frac{1-x^2}{1+x^2}=x^3}\}\text{Musterlösung}\\
-\end{array}$</p>
+<h2 id="Vorlesungsaufgabe(18.10.18):">Vorlesungsaufgabe(18.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(18.10.18):">&#182;</a></h2><h3 id="Berechnen-Sie-alle-L&#246;sungen-von-$2-\frac{1}{2}\-\left\vert\-x\-\right\vert\-=\-\left\vert\-x-3\-\right\vert$">Berechnen Sie alle L&#246;sungen von $2-\frac{1}{2}\ \left\vert\ x\ \right\vert\ =\ \left\vert\ x-3\ \right\vert$<a class="anchor-link" href="#Berechnen-Sie-alle-L&#246;sungen-von-$2-\frac{1}{2}\-\left\vert\-x\-\right\vert\-=\-\left\vert\-x-3\-\right\vert$">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>$\left\vert\ x\ \right\vert=\left\{\begin{array}{rr}
+x, &amp; wenn\ x\geq0\Leftrightarrow x\geq-1\\
+-x, &amp; wenn\ x&lt;0\Leftrightarrow x&lt;-1\\
+\end{array}\right.$
+$\left\vert{\quad\left\vert\ x-3\ \right\vert=\left\{\begin{array}{rr}
+x-3, &amp; wenn\ x-3\geq0\Leftrightarrow x\geq3\\
+-(x-3), &amp; wenn\ x-3&lt;0\Leftrightarrow x&lt;3\\
+\end{array}\right.}\right.$</p>
+<p>$\quad\\
+\quad$</p>
+<p>$\underline{\text{1 Fall }x&lt;0}\\
+2-\frac{1}{2}\ \left\vert\ x\ \right\vert\ =\ \left\vert\ x-3\ \right\vert\\
+2-(\frac{1}{2}(-x))=-x+3 \Leftrightarrow2-(-\frac{1}{2}x)=3-x\Leftrightarrow2+\frac{1}{2}x=3-x\Leftrightarrow-1=-x-\frac{1}{2}x\Leftrightarrow-1=-\frac{3}{2}x\Leftrightarrow\frac{3}{2}=x\\
+x=\frac{3}{2}\text{ ist nicht kleiner als }0,\text{ erfüllt nicht }x&lt;0\\
+\Rightarrow Wiederspruch↯\ \Rightarrow\text{Keine Lsg. im 1.Fall}\\
+$$\quad\\
+\underline{\text{2 Fall: }0\leq x&lt;3:}\\
+2-\frac{1}{2}\ \left\vert\ x\ \right\vert\ =\ \left\vert\ x-3\ \right\vert\\
+2-\frac{1}{2}x=-x+3 \Leftrightarrow2-\frac{1}{2}x=3-x\Leftrightarrow-x+\frac{1}{2}x=1\Leftrightarrow1=\frac{1}{2}x\Leftrightarrow x=2\\
+x=2\text{ erfüllt }0\leq x&lt;3\Longrightarrow\text{ Lsg.}\\
+\quad\\
+$$\quad\underline{\text{3 Fall: }x\geq3}\\
+\quad2-\frac{1}{2}\ \left\vert\ x\ \right\vert\ =\ \left\vert\ x-3\ \right\vert\\
+\quad2-\frac{1}{2}x=x-3 \Leftrightarrow5=x-\frac{1}{2}x\Leftrightarrow5=\frac{3}{2}x\Leftrightarrow x=\frac{10}{3}\ (=3+\frac{1}{3})\\
+\quad x=\frac{10}{3}\geq3\Longrightarrow\text{ Lsg.}\\
+\quad\\
+\quad\underline{\text{Zusammenfassen:}}\text{ Die Lösungen sind }x=\frac{10}{3}\text{ und }x=2$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section115'></a></p>
+<h2 id="1.15-Fakult&#228;t-und-Binomialkoeffizienten:">1.15 Fakult&#228;t und Binomialkoeffizienten:<a class="anchor-link" href="#1.15-Fakult&#228;t-und-Binomialkoeffizienten:">&#182;</a></h2><p>Fakultät: Für $x\in\mathbb{N}^*$ (also $n\geq1$)</p>
+<p>$\large{n!=1\cdot2\cdot3\cdot...\cdot n\\
+1!=1,\quad 2!=1\cdot2=2,\quad 3!=1\cdot2\cdot3=6,\quad 4!=1\cdot2\cdot3\cdot4=3!\cdot4=6\cdot4=24,\quad ...}$</p>
 
 </div>
 </div>
