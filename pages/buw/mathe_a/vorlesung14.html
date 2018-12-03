@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung9</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung14</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11822,7 +11822,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.9 - 02.11.2018&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.14- 16.11.2018&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11839,7 +11839,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Vorlesung - Nr.9 - 02.11.2018
+<pre>Vorlesung - Nr.14- 16.11.2018
 </pre>
 </div>
 </div>
@@ -11854,11 +11854,12 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section0'></a></p>
 <h1 id="Inhaltsverzeichnis:"><a href="#section0">Inhaltsverzeichnis</a>:<a class="anchor-link" href="#Inhaltsverzeichnis:">&#182;</a></h1><ol>
-<li><a href="#section5">Kapitel 5 Komplexe Zahlen</a><br>
- 5.4.  <a href="#section54">Definition und Eigenschaften</a><br>
- 5.5.  <a href="#section55">Rechenoperationen</a><br>
- 5.V.  <a href="#sectionva">Vorlesungsaufgabe(02.11.18)</a><br>
- 5.6.  <a href="#section56">Eigenschaften von $e^{j\varphi}$</a>        </li>
+<li><a href="#section7">Kapitel 7 Vektorenrechnung in $\mathbb{R}^n$</a><br>
+ 7.15. <a href="#section715">Vektorprodukt und Orthogonalität</a><br>
+ 7.16.  <a href="#section716">Vektorenprodukt und Orientierung</a><br>
+ 7.17.  <a href="#section717">Vektorprodukt und Flächeninhalt</a><br>
+ 7.V.   <a href="#sectionva">Vorlesungsaufgabe(16.11.18)</a><br>
+ 7.18.  <a href="#section718">Das Spatprodukt</a>    </li>
 </ol>
 
 </div>
@@ -11868,55 +11869,12 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section5'></a></p>
-<h2 id="Kapitel-5-Komplexe-Zahlen:">Kapitel 5 Komplexe Zahlen:<a class="anchor-link" href="#Kapitel-5-Komplexe-Zahlen:">&#182;</a></h2><p><u></u>
-<a id='section54'></a></p>
-<h2 id="5.4-L&#246;sung-quadratischer-Gleichung-in-$\mathbb{C}$:">5.4 L&#246;sung quadratischer Gleichung in $\mathbb{C}$:<a class="anchor-link" href="#5.4-L&#246;sung-quadratischer-Gleichung-in-$\mathbb{C}$:">&#182;</a></h2><p>$z^2+pz+q=0\quad;\ p,q\in\mathbb{C}\\
-\Leftrightarrow (z+(\frac{p}{2}))^2=\frac{p}{4}-q\quad\vert \color{red}{w=z+\frac{p}{2}\ d.h.}\\
-\Leftrightarrow z=-\frac{p}{2}\pm w, \color{red}{w\text{ Lsg. von }w^2=\frac{p^2}{4}-q}\\
-\quad\\
-"z=-\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}"\text{ d.h. }w=\pm\sqrt{\frac{p^2}{4}-q}$</p>
-<p>Problem: Löse $w^2=a$ für $a\in\mathbb{C}$<br>
-<u>1 Fall</u> $a\in\mathbb{R}$<br>
-$a\geq0:\ w=\pm\sqrt{a}\quad \in\mathbb{R}\\
-a&lt;0:\ w=\pm\sqrt{\vert a\vert}j\\
-("\pm\sqrt{a}=\sqrt{-\vert a\vert}=\pm\sqrt{\vert a\vert}\cdot\sqrt{-1}=\pm\sqrt{\vert a\vert}j")\\
-\text{Probe: }w^2=(\pm\sqrt{\vert a\vert}j)^2=\vert a\vert j^2=-\vert a\vert=a\\
-Bsp:\ w^2=-3\\
-\Rightarrow w=\pm\sqrt{3}j$<br>
-<u>1 Fall</u> $a\in\mathbb{C}$<br>
-Ansatz: $w=x+yj$<br>
-$\Rightarrow w^2=(x+yj)^2=x^2+2xyj+y^2j^2=x^2-y^2+2xyj\quad \overset{!}{=}a\quad\quad ("\overset{!}{=}"\text{ unser Ziel, soll entsprechen})\\
-\Leftrightarrow \left\{\begin{array}{rrr}
-x^2-y^2 &amp; =\text{ Re }a &amp; \quad\text{löse Gl.sys nach }x\text{ und }y\\
-2xy &amp; =\text{ Im }a &amp; \\
-\end{array}\right.$</p>
-<p>Bsp:<br>
-$w^2=-j,\ w=x+yj\\
-w^2=x^2-y^2+2xyj\overset{!}{=}-j\\
-\Leftrightarrow \left\{\begin{array}{rrr}
-x^2-y^2=0 &amp; \color{orange}{I} &amp; \leftarrow\text{Realteil}\\
-2xy=-1 &amp; \color{orange}{II} &amp; \leftarrow\text{Imaginärteil}\\
-\end{array}\right.\\
-\quad\\
-\color{orange}{II} \Rightarrow x\neq0\ und\ y\neq0,\ y=\frac{-1}{2x}\rightarrow\text{Einsetzen in }\color{orange}{I}\\
-\color{orange}{\text{2. Formel nach y umstellen}}\\
-\Rightarrow x^2-(\frac{-1}{2x})^2=0\\
-\Leftrightarrow x^2-\frac{-1}{4x}=0\quad\vert\cdot x^2\\
-\Leftrightarrow x^4-\frac{1}{4}=0\\
-\Leftrightarrow x^4=\frac{1}{4}\quad(u=x^2\Leftrightarrow u^2=\frac{1}{4}\Rightarrow u=\frac{1}{2}\ \vee\ u=-\frac{1}{2})\\
-\Leftrightarrow x^2=\frac{1}{2}\\
-\text{Weil }x=\text{Re}z\text{ also }x\in\mathbb{R},\text{ also }x^2\geq0\\
-\Rightarrow x^2=\frac{1}{2}\\
-\Rightarrow x_1=\frac{1}{\sqrt{2}}\ \vee\ x_2=\frac{-1}{\sqrt{2}}\\
-\text{Einsetzen in }\color{red}{y=\frac{-1}{2x}}\\
-\Rightarrow x_1=\frac{1}{\sqrt{2}}\Rightarrow y_1=\frac{-1}{2\frac{1}{\sqrt{2}}}=\frac{-1}{\sqrt{2}}\\
-x_2\frac{-1}{\sqrt{2}}\Rightarrow y_2=\frac{-1}{2\frac{-1}{\sqrt{2}}}=\frac{1}{\sqrt{2}}\\
-\Rightarrow w_1=\frac{1}{\sqrt{2}}+\frac{-1}{\sqrt{2}}j,\ w_2=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j\\
-\text{Beachte: }w_2=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j=-w_1\\
-d.h.\ w^2=-j \text{ hat die Lsgen}\\
-w=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j\quad\text{ und }\quad w=-(\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j)
-$</p>
+<p><a id='section7'></a></p>
+<h2 id="Kapitel-7-Vektorenrechnung-in-$\mathbb{R}^n$:">Kapitel 7 Vektorenrechnung in $\mathbb{R}^n$:<a class="anchor-link" href="#Kapitel-7-Vektorenrechnung-in-$\mathbb{R}^n$:">&#182;</a></h2><p><u></u>
+<a id='section715'></a></p>
+<h2 id="7.15-Vektorprodukt-und-Orthogonalit&#228;t:">7.15 Vektorprodukt und Orthogonalit&#228;t:<a class="anchor-link" href="#7.15-Vektorprodukt-und-Orthogonalit&#228;t:">&#182;</a></h2><p>$\vec{a}\cdot(\vec{a}\times\vec{b})=\left(\begin{array}{cr}a_1\\a_2\\a_3\end{array}\right)\cdot\left(\begin{array}{cr}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{array}\right)=\left.\begin{array}{cr}\color{blue}{a_1a_2b_3}-\color{green}{a_1a_3b_2}\\+\color{orange}{a_2a_3b_1}-\color{blue}{a_2a_1b_3}\\+\color{green}{a_3a_1b_2}-\color{orange}{a_3a_2b_1}\end{array}\right.=0$</p>
+<p>genauso bei: $\vec{b}\cdot(\vec{a}\times\vec{b})=0$<br>
+$\Rightarrow\vec{a}\text{ und }\vec{b}$ sind orthogonal zu $\vec{a}\times\vec{b}$ (oder andersrum geschrieben)</p>
 
 </div>
 </div>
@@ -11925,39 +11883,66 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section55'></a></p>
-<h2 id="5.5-Polarformen-komplexer-Zahlen:">5.5 Polarformen komplexer Zahlen:<a class="anchor-link" href="#5.5-Polarformen-komplexer-Zahlen:">&#182;</a></h2><p>$z=x+yj$ ("karthesische Form")</p>
-<p>Graph img phi,r</p>
-<p>$(x,y)$ in Polarkoordinaten:<br>
-$x=r\cos\varphi\\
-y=r\sin\varphi$<br>
-$z=r\cos\varphi+j\cdot r\sin\varphi=r\cdot(\cos\varphi+j\sin\varphi)\\
-r=\sqrt{x^2+y^2}=\vert z\vert$</p>
-<h3 id="$\varphi$-hei&#223;t-Argument-von-$z$:">$\varphi$ hei&#223;t Argument von $z$:<a class="anchor-link" href="#$\varphi$-hei&#223;t-Argument-von-$z$:">&#182;</a></h3><p>$\varphi=\arg z$<br>
-(wie bei Polarkoordinaten: $\varphi$ nicht eindeutig)</p>
-<p>Formel von Euler:</p>
-<p>$e^{j\varphi}=\cos\varphi+j\sin\varphi$ (abkürzung/ nur eine Definition, keine rechnung)<br>
-Damit Polarform von $z$:<br>
-$z=r\cdot e^{j\varphi}, r=\vert z\vert, \varphi=\arg z$</p>
-<h4 id="Bsp:">Bsp:<a class="anchor-link" href="#Bsp:">&#182;</a></h4><p>1) $z=e^{j\frac{\Pi}{3}}\quad$ (d.h. $r=1,\ \varphi=\frac{\Pi}{3}$)<br>
-$z$ in karthesicher Form, $z=x+$?</p>
-<p>$z=e^{j\frac{\Pi}{3}}=\cos(\frac{\Pi}{3})+j\sin(\frac{\Pi}{3})\\
-=\frac{1}{2}+\frac{\sqrt{3}}{2}j$</p>
-<p>IMG GRAPH EINHEITSKREIS PI/3</p>
-<p>2) $z=-1-j\quad$ Polarform?<br>
-$r=\vert z\vert=\sqrt{(-1^2)^2+(-1)^2}=\sqrt{2}$</p>
-<h5 id="Aus-3.6:">Aus 3.6:<a class="anchor-link" href="#Aus-3.6:">&#182;</a></h5><p>$\varphi=\left\{\begin{array}{rr}
-\arccos\frac{x}{r} &amp; \text{wenn }y\geq0\\
--\arccos\frac{x}{r} &amp; \text{wenn }y&lt;0\\
-\end{array}\right.\\
+<p><a id='section716'></a></p>
+<h2 id="7.16-Vektorenprodukt-und-Orientierung:">7.16 Vektorenprodukt und Orientierung:<a class="anchor-link" href="#7.16-Vektorenprodukt-und-Orientierung:">&#182;</a></h2><p>Seien $\vec{a},\vec{b},\vec{c}\in\mathbb{R}^3$ alle $\neq0,\ \vec{a},\vec{b},\vec{c}$ nicht in einer Ebene.<br>
+Das Tripel $(\vec{a},\vec{b},\vec{c})$ ist <u>rechtshändig orientiert</u> (positiv orientiert, bildet ein Rechtssys.)<br>
+wenn<br>
+$\left.\begin{array}{rr}
+\vec{a} &amp; \text{in Richtung Daumen}\\
+\vec{b} &amp; \text{in Richtung Zeigefinger}\\
+\vec{c} &amp; \text{in Richtung Mittelfinger}\\
+\end{array}\right.$<br>
+der rechten Hand.<br>
+($\vec{a}\perp\vec{b}\text{ und }\vec{a}\perp\vec{c},\vec{b}\perp\vec{c}$ *nicht nötig*)<br>
+Linkshändig (negativ-)orientiert: Linke Hand ($\vec{b}\times\vec{a}$ Reihenfolge ist wichtig!)</p>
+<h4 id="Bsp:">Bsp:<a class="anchor-link" href="#Bsp:">&#182;</a></h4><ul>
+<li>$(\vec{e_1},\vec{e_2},\vec{e_3})$ ist rechtshändig orientiert.   </li>
+<li>$(\vec{e_2},\vec{e_1},\vec{e_3})$ ist linkshändig orientiert.  </li>
+</ul>
+<p>Zurück zum Vektorprodukt:<br>
+wenn $\vec{a},\vec{b}\in\mathbb{R}^3$ gegeben und $\vec{a}\times\vec{b}\neq0$ dann ist $(\vec{a},\vec{b},\vec{a}\times\vec{b})$ rechtshändig orientiert.<br>
+<u>Herleitung</u>: Drehe koordinatensystem so dass $x$-Achse in Richtung $\vec{a}$ zeigt und $\vec{b}$ in $xy$-Ebene.</p>
+
+<pre><code>IMG R^3
+
+</code></pre>
+<p>1.Fall: $b_2&gt;0\Rightarrow a_1b_2&gt;0\rightarrow \vec{a}\times\vec{b}$ in positive $z$-Richtung<br>
+$b_2&gt;0\Rightarrow\vec{b}$ in positive $y$-Richtung $\Rightarrow(\vec{a},\vec{b},\vec{a}\times\vec{b})$ rechtshändig orientiert.<br>
+2.Fall $b_2=0\Rightarrow \vec{a}\times\vec{b}=0$ interessiert uns nicht.</p>
+<p>3.Fall $b_2&lt;0\Rightarrow a_1b_2&lt;0$<br>
+$\Rightarrow\vec{a}\times\vec{b}$ in negative $z$-Richtung<br>
+$\Rightarrow b_2&lt;0\Rightarrow\vec{b}$ in negative $y$-Richtung
+$\Rightarrow$rechtshädig orientiert.</p>
+
+<pre><code>IMG VEKTOR A;B;AxB
+
+</code></pre>
+<h4 id="Bem.-$(\vec{a},\vec{b},-\vec{a}\times\vec{b})$-linksh&#228;ndig-orient.">Bem. $(\vec{a},\vec{b},-\vec{a}\times\vec{b})$ linksh&#228;ndig orient.<a class="anchor-link" href="#Bem.-$(\vec{a},\vec{b},-\vec{a}\times\vec{b})$-linksh&#228;ndig-orient.">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section717'></a></p>
+<h2 id="7.17-Vektorprodukt-und-Fl&#228;cheninhalt:">7.17 Vektorprodukt und Fl&#228;cheninhalt:<a class="anchor-link" href="#7.17-Vektorprodukt-und-Fl&#228;cheninhalt:">&#182;</a></h2><p>$|\vec{a}\times\vec{b}|^2=(a_2b_3-a_3b_2)^2+(a_3b_1-a_1b_3)^2+(a_1b_2-a_2b_1)^2\\
+=a_2^2b_3^2-2a_2b_2a_3b_3+a_3^2b_2^2+a_3^2b_1^2-2a_1a_3b_1b_3+a_1^2b_3^2+a_1^2b_3^2-2a_1a_2b_1b_2+a_2^2b_1^2\\
+=(a_1^2+a_2^2+a_3^2)\cdot(b_1^2+b_2^2+b_3^2)-(a_1b_1+a_2b_2+a_3b_3)^2\\
+=|\vec{a}|^2\cdot|\vec{b}|^2-(\vec{a}\cdot\vec{b})^2\\
 \quad\\
-y=\text{Im}z=-1&lt;0,\quad x=\text{Re}z=-1\\
-\Rightarrow\varphi= -\arccos\frac{x}{r}=-\underbrace{\arccos\frac{-1}{\sqrt{2}}}_{\frac{3\Pi}{4}}\\
-\Rightarrow\varphi=-\frac{3\Pi}{4}\\
-\Rightarrow z= \sqrt{2}e^{-\frac{3\Pi}{4}j}\\
-$</p>
-<h3 id="Erweiterung:">Erweiterung:<a class="anchor-link" href="#Erweiterung:">&#182;</a></h3><p>IMG GRAPH COS Rechnung</p>
-<p>Graph einheitskreis Lsg -3Pi/4</p>
+\vec{a}\cdot\vec{b}=|\vec{a}|\cdot|\vec{b}|\cos\varphi\\
+\Leftrightarrow|\vec{a}\times\vec{b}|^2=|\vec{a}|^2|\vec{b}|^2-|\vec{a}|^2|\vec{b}|^2\cos^2\varphi\\
+=||^2||^2(\underbrace{1-\cos^2\varphi}_{\sin^2\varphi})\\
+\Rightarrow|\vec{a}\times\vec{b}|=|\vec{a}|\cdot|\vec{b}|\sin\varphi\qquad\varphi=\varphi(\vec{a},\vec{b})\\
+(\sqrt{\sin^2\varphi}=|\sin\varphi|=\sin\varphi\text{ weil }0\leq\varphi\leq\Pi\Rightarrow\sin\varphi\leq0)$</p>
+
+<pre><code>IMG FLÄCHENINHALT PARALLELOGRAMM
+
+</code></pre>
+<p>Flächeninhalt Parallelogramm:<br>
+$A=|\vec{a}|\cdot h=|\vec{a}|\cdot|\vec{b}|\sin\varphi\\
+\Rightarrow A=|\vec{a}\times\vec{b}|$</p>
 
 </div>
 </div>
@@ -11967,9 +11952,10 @@ $</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='sectionva'></a></p>
-<h2 id="Vorlesungsaufgabe(02.11.18):">Vorlesungsaufgabe(02.11.18):<a class="anchor-link" href="#Vorlesungsaufgabe(02.11.18):">&#182;</a></h2><p>Berechnen Sie</p>
-<p>a) karthesiche Form von $\large z= 4e^{\frac{2\Pi}{3}j}$</p>
-<p>b) Polarform von $\large z=\sqrt{12}+2j$</p>
+<h2 id="Vorlesungsaufgabe(16.11.18):">Vorlesungsaufgabe(16.11.18):<a class="anchor-link" href="#Vorlesungsaufgabe(16.11.18):">&#182;</a></h2><p>Berechnen Sie $\vec{c}=\vec{a}\times\vec{b}$ für</p>
+<p>$\vec{a}=\left(\begin{array}{cr}1\\3\\-2\end{array}\right),\quad\vec{b}=\left(\begin{array}{cr}0\\-4\\-1\end{array}\right)$</p>
+<p>Rechnen Sie nach, dass $\vec{a}\perp\vec{c}$ und $\vec{b}\perp\vec{c}$<br>
+Was ist der Flächeninhalt des Parallelogramms von $\vec{a}\text{ und }\vec{b}$?</p>
 
 </div>
 </div>
@@ -11978,13 +11964,12 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>a)$\large{r=4,\ \varphi=\frac{2\Pi}{3},\quad z=x+yj\\
-z=4e^{\frac{2\Pi}{3}j}=4\cos(\frac{2\Pi}{3})+j\sin(\frac{2\Pi}{3})\\
-4(-\frac{1}{2})+j4(\frac{\sqrt{3}}{2})\\
-\Rightarrow z=-2+2\sqrt{3}j}\\
-NR:\ \cos(\frac{2\Pi}{3})=-\cos(\frac{\Pi}{3})=-\frac{1}{2}\\
-\sin(\frac{2\Pi}{3})=\sin(\frac{\Pi}{3})=\frac{\sqrt{3}}{2}$</p>
-<p>GRAPH SIN UND COS KURVE</p>
+<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>$\vec{a}=\left(\begin{array}{cr}1\\3\\-2\end{array}\right),\quad\vec{b}=\left(\begin{array}{cr}0\\-4\\-1\end{array}\right)$</p>
+<p>$\vec{c}=\vec{a}\times\vec{b}=\left(\begin{array}{cr}1\\3\\-2\end{array}\right)\times\left(\begin{array}{cr}0\\-4\\-1\end{array}\right)=\left(\begin{array}{cr}3\cdot(-1)-(-2)\cdot(-4)\\(-2)\cdot0-1\cdot(-1)\\1\cdot(-4)-3\cdot0\end{array}\right)=\left(\begin{array}{cr}-11\\1\\-4\end{array}\right)\\
+\quad\\
+\vec{a}\cdot\vec{c}=-11+3+8=0\\
+\vec{b}\cdot\vec{c}=-4+4=0\\
+A=\sqrt{121+1+16}=\sqrt{138}$</p>
 
 </div>
 </div>
@@ -11993,25 +11978,25 @@ NR:\ \cos(\frac{2\Pi}{3})=-\cos(\frac{\Pi}{3})=-\frac{1}{2}\\
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>b) $\large{y=\vert z\vert=\sqrt{12+4}=4,\quad y=\text{Im}z\\
-\Rightarrow\varphi=\arccos(\frac{\sqrt{13}}{4})=\arccos(\frac{\sqrt{3}}{2})=\frac{\Pi}{6}\\
-\Rightarrow z=4e^{\frac{\Pi}{6}j}}$</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section56'></a></p>
-<h2 id="5.6-Eigenschaften-von-$e^{j\varphi}$:">5.6 Eigenschaften von $e^{j\varphi}$:<a class="anchor-link" href="#5.6-Eigenschaften-von-$e^{j\varphi}$:">&#182;</a></h2><p>1) $\large \left\vert e^{j\varphi}\right\vert=1$, d.h. $e^{j\varphi}$ liegt auf Einheitskreis</p>
-<p>2) $\large e^{j(\varphi+\psi)}=e^{j\varphi}\cdot e^{j(\psi}$</p>
-<p>3) $\large e^{j\cdot k\varphi}=(e^{j\varphi})^k$</p>
-<p>4) $\large \overline{e^{j\varphi}}=e^{-j\varphi}=\frac{1}{e^{j\varphi}}$</p>
-<p>5) $\large e^{j\frac{\Pi}{2}}=j,\ e^{j\Pi}=-1$</p>
-<p>6) $\large \cos\varphi=\text{Re}(e^{j\varphi})=\frac{1}{2}(e^{j\varphi}+e^{-j\varphi})\\
-\large\sin\varphi=\text{Im}(e^{j\varphi})=\frac{1}{2j}(e^{j\varphi}+e^{-j\varphi})$</p>
+<p><a id='section718'></a></p>
+<h2 id="7.18-Das-Spatprodukt:">7.18 Das Spatprodukt:<a class="anchor-link" href="#7.18-Das-Spatprodukt:">&#182;</a></h2><p>$[\vec{a},\vec{b},\vec{c}]:=(\vec{a}\times\vec{b})\cdot\vec{c}$ heißt <u>Spatprodukt</u> von $\vec{a},\vec{b},\vec{c}\in\mathbb{R}^3$</p>
+<p>$[\vec{a},\vec{b},\vec{c}]=\left(\begin{array}{cr}a_2b_3-a_3b_2\\a_3b_1-a_1b_3\\a_1b_2-a_2b_1\end{array}\right)\cdot\left(\begin{array}{cr}c_1\\c_2\\c_3\end{array}\right)\\
+=a_2b_3c_1-a_3b_2c_1+a_3b_1c_2-a_1b_3c_2+a_1b_2c_3-a_2b_1c_3$<br>
+also Determinante:<br>
+$[\vec{a},\vec{b},\vec{c}]=det\left(\begin{array}{crrr}a_1 &amp; b_1 &amp; c_1\\a_2 &amp; b_2 &amp; c_2\\a_3 &amp; b_3 &amp; c_3\end{array}\right)$<br>
+vers. methoden der berechnung:</p>
+<ol>
+<li></li>
+<li>wie im Vorkurs:<br>
+$=a_1b_2c_3+b_1c_2a_3+c_1a_2b_3-a_3b_2c_1-b_3c_2a_1-c_3a_2b_1$  </li>
+</ol>
+<h4 id="geometrische-Bedeutung:">geometrische Bedeutung:<a class="anchor-link" href="#geometrische-Bedeutung:">&#182;</a></h4><p>$[\vec{a},\vec{b},\vec{c}]=(\vec{a}\times\vec{b})\cdot\vec{c}=|\underbrace{\vec{a}\times\vec{b}}_{\vec{d}}||\vec{c}|\cos\varphi$<br>
+    IMG SPAT ZEICHUNG</p>
+<p>$\vec{c}\cdot\cos\varphi=h$ Höhe des Spat<br>
+$|\vec{a}\times\vec{b}|=$ Fläche Parallelogramm (Grundfläche des Spat)<br>
+Volumen Spat$=|\vec{a}\times\vec{b}|\cdot h\leftrightarrow|\vec{a}\times\vec{b}|\cdot\vec{c}\cos\varphi=[\vec{a},\vec{b},\vec{c}]$</p>
+<h3 id="Allgemein:-Volumen-Spat-$=|[\vec{a},\vec{b},\vec{c}]|$">Allgemein: Volumen Spat $=|[\vec{a},\vec{b},\vec{c}]|$<a class="anchor-link" href="#Allgemein:-Volumen-Spat-$=|[\vec{a},\vec{b},\vec{c}]|$">&#182;</a></h3><p>$[\vec{a},\vec{b},\vec{c}]=\left\{\begin{array}{crr}&gt;0 &amp; wenn\ (\vec{a},\vec{b},\vec{c})\ rechthändig\\&lt;0 &amp; wenn\ (\vec{a},\vec{b},\vec{c})\ linkshändig\end{array}\right.$</p>
+<p>d</p>
 
 </div>
 </div>

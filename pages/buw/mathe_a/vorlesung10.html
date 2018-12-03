@@ -12064,7 +12064,7 @@ $\quad\\
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='sectionva'></a></p>
-<h2 id="Vorlesungsaufgabe(07.10.18):">Vorlesungsaufgabe(07.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(07.10.18):">&#182;</a></h2><p>Berechnen Sie die Lsg.</p>
+<h2 id="Vorlesungsaufgabe(07.11.18):">Vorlesungsaufgabe(07.11.18):<a class="anchor-link" href="#Vorlesungsaufgabe(07.11.18):">&#182;</a></h2><p>Berechnen Sie die Lsg.</p>
 <p>$\begin{array}{|rcc|l}
 x_1+x_2+x_3 &amp; = &amp; 0 &amp; \\
 -2x_1-x_3 &amp; = &amp; 5 &amp; \\
@@ -12113,6 +12113,266 @@ $\left.\begin{array}{c}
 x_1+x_2+x_3=0\Rightarrow x_1+4-3=0\Rightarrow x_1=-1\\
 \quad\\
 x_1=-1,\ x_2=4\ ,x_3=-3$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Unsicher-wohin">Unsicher wohin<a class="anchor-link" href="#Unsicher-wohin">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section6'></a></p>
+<h2 id="Kapitel-6-Der-Gau&#223;algorithmus-f&#252;r-lineare-Gls:">Kapitel 6 Der Gau&#223;algorithmus f&#252;r lineare Gls:<a class="anchor-link" href="#Kapitel-6-Der-Gau&#223;algorithmus-f&#252;r-lineare-Gls:">&#182;</a></h2><p><u></u>
+<a id='section64'></a></p>
+<h2 id="6.4-Gausalgorithmus-(allgemein):">6.4 Gausalgorithmus (allgemein):<a class="anchor-link" href="#6.4-Gausalgorithmus-(allgemein):">&#182;</a></h2><p>Zur Lösung von $m\times n$ Gl.sys. $(A|b)$:</p>
+<p>$I$.Zeilenumformungen um $(A|b)$ auf <u>Zeilenstufenform</u> zubringen:</p>
+<p>$\large(A|b)=\left(\begin{array}{cccccccccc}
+\bar{a}_{11} &amp; \cdots &amp; * &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; *\\
+0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \bar{a}_{2{j_2}} &amp; * &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; *\\
+\vdots &amp;   &amp; \vdots &amp;   &amp; 0 &amp; 0 &amp; \cdots &amp; \bar{a}_{3{j_3}} &amp;   &amp;   &amp;   &amp;   &amp;\vdots\\
+\vdots &amp;   &amp; \vdots &amp;   &amp; \vdots &amp;   &amp;   &amp;   &amp; \ddots &amp;   &amp;   &amp;   &amp; \vdots\\
+\vdots &amp;   &amp; \vdots &amp;   &amp; \vdots &amp;   &amp;   &amp;   &amp;   &amp; \color{red}{\boxed{\bar{a}_{r{j_r}}}} &amp; * &amp; \cdots &amp; * \\
+\vdots &amp;   &amp; \vdots &amp;   &amp; \vdots &amp;   &amp;   &amp;   &amp;   &amp; 0 &amp; \cdots &amp; \cdots &amp; 0\\
+\vdots &amp;   &amp; \vdots &amp;   &amp; \vdots &amp;   &amp;   &amp;   &amp;   &amp; \vdots &amp;   &amp;   &amp; \vdots\\
+0 &amp; \cdots &amp; 0 &amp; \cdots &amp; 0 &amp; \cdots &amp; \cdots &amp; \cdots &amp; \cdots &amp; 0 &amp; \cdots &amp; \cdots &amp; 0\\
+\end{array}\left|\begin{array}{c}
+\color{red}{\bar{b}_1}\\
+\color{red}{\bar{b}_2}\\
+\color{red}{\vdots}\\
+\color{red}{\vdots}\\
+\color{red}{\bar{b}_r}\\
+\color{blue}{\bar{b}_{r+1}}\\
+\color{blue}{\vdots}\\
+\color{blue}{\bar{b}_m}\\
+\end{array}\right.\right)\left.\begin{array}{c}
+ \\
+ \\
+\color{red}{r\text{ Zeilen}} \\
+ \\
+ \\
+ \\
+\color{blue}{m-r\text{ Zeilen}}\\
+ \\
+\end{array}\right.$</p>
+<p>mit $\bar{a}_{11},...\bar{a}_{r{j_r}}\neq0$<br>
+$\large*$ sind bel. Zahlen</p>
+<h3 id="Umformungen-auf-Zeilen-Stufenform:">Umformungen auf Zeilen-Stufenform:<a class="anchor-link" href="#Umformungen-auf-Zeilen-Stufenform:">&#182;</a></h3><ol>
+<li> a) Tausche Zeilen sodass $\bar{a}_{11}\neq0$<br>
+ b) Addiere Vielfache von Zeile $1$ zu Zeilen $2$ bis $m$ so dass unter $\bar{a}_{11}$ nur Nullen stehen, d.h. $\bar{a}_{21},...,\bar{a}_{m1}=0$   </li>
+<li> a) Gehe zu nächster Spalte $j_2$ in der unterhalb Zeile $1$ eine Zahl$neq0$ ist (oft $j_2=2$)<br>
+ b) Tausche Zeilen sodass diese Zahl in Zeile $2$ steht (d.h. $\bar{a}_{2{j_2}}\neq0$)<br>
+ c) Wiederhole 2. für Zeile $3$, Spalte $j_3$, usw. bis Zeile $m$ oder bis nur noch Nullzeilen (im A-Teil)  übrig sind.  </li>
+</ol>
+<p>$II$. Lösung durch Rückwärtseinsetzen:<br>
+Zeile $r+1$ bis m:<br>
+$0_{x_1}+\cdots+0_{x_n}=\bar{b}_{r+1}\\
+\vdots\\
+0_{x_1}+\cdots+0_{x_n}=\bar{b}_{m}$
+$\Rightarrow$ Gl.sys. nur lösbar wenn $\bar{b}_{r+1}=\cdots=\bar{b}_{m}=0$ oder $m=r$, d.h. Keine Nullzeilen im $A$-Teil.<br>
+Gl.sys. lösbar$\Rightarrow$ Berechne rückwärts aus Zeilen $1$ bis $r$ die Variabeln $\large x_1,\ x_{j_2},\ \dots,\ x_{j_r}$<br>
+D.h. berechne jeweils das $x_j$ in der Spalte, in der auch der erste Eintrag $\bar{a}_{ij}$ von der Zeile $\neq0$ ist.<br>
+$\color{red}{\text{siehe Matrix markierung } {\large\square} \text{ ist das x welches ausgerechnet wird } (\text{hier }\large{\bar{a}_{r{j_r}}*\cdots*=\bar{b}_{r}})}$<br>
+Die restlichen $x_j$ ($n-r$ Stück) sind freie Parameter der Lösung.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section62'></a></p>
+<h2 id="6.5-Satz:">6.5 Satz:<a class="anchor-link" href="#6.5-Satz:">&#182;</a></h2><p>Jedes lin.Gl.sys. $(A|b)$ lässt sich durch Zeilenumformung auf Zeilen-Stufenform $(\bar{A}|\bar{b})$ bringen.<br>
+Gl.sys. lösbar $\Leftrightarrow\bar{b}_{r+1}=\cdots=\bar{b}_{m}=0$<br>
+Dann: $r=n\Rightarrow \text{eindeutige Lösung}\\
+r&lt;n\Rightarrow \text{Lsg. mit }n-r\text{ freien Parametern}$<br>
+Die Zahl $r$ heißt Rang des Gl.sys.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section63'></a></p>
+<h2 id="6.6-Bsp:">6.6 Bsp:<a class="anchor-link" href="#6.6-Bsp:">&#182;</a></h2><p>1)</p>
+<p>$\begin{array}{ccc}
+2x_1+3x_2-x_3 &amp; = &amp; -1 &amp; \\
+-2x_1-3x_2+2x_3 &amp; = &amp; 6 &amp; \\
+6x_1+9x_2-x_3 &amp; = &amp; 7 &amp;
+\end{array}\\
+$$\longrightarrow\left(\begin{array}{ccc|c}
+ 2 &amp; 3 &amp; -1 &amp; -1 \\
+ -2 &amp; -3 &amp; 2 &amp; 6 \\
+ 6 &amp; 9 &amp; -1 &amp; 7 \\
+\end{array}\right)$
+$\left.\begin{array}{c}
+ \quad\\
+ \color{red}{+I}\\
+ \color{red}{-3I}\\
+\end{array}\right.$<br>
+$\quad\\
+\Longleftrightarrow\left(\begin{array}{cccc|c}
+ 2 &amp; 3 &amp; -1 &amp; -1 \\
+ -2 &amp; -3 &amp; 2 &amp; 6 \\
+ 6 &amp; 9 &amp; -1 &amp; 7 \\
+\end{array}\right)$
+$\quad\\\left.\begin{array}{c}
+ \quad\\
+ \quad\\
+ \color{red}{-2II}\\
+\end{array}\right.
+\Longleftrightarrow\left(\begin{array}{ccc|c}
+ 2 &amp; 3 &amp; -1 &amp; -1 \\
+ -2 &amp; -3 &amp; 2 &amp; 6 \\
+ 6 &amp; 9 &amp; -1 &amp; 7 \\
+\end{array}\right)\\
+\quad\quad\quad\quad\quad\color{red}{\text{Zeilen-Stufenform}}$</p>
+<p>$\color{red}{\text{Rang: ist } r=2\ (2\text{ Zeilen}\neq0)}$</p>
+<p>$\bar{b}_{3}=0\Rightarrow$ Gl.sys. lösbar<br>
+$n-r=3-2=1$ freier Parameter</p>
+<p>1.Zeile: $\bar{a}_{11}=2$ erste Zahl$\neq0\rightarrow$ Berechne $x_1$<br>
+2.Zeile: $\bar{a}_{23}=1$ erste Zahl$\neq0\rightarrow$ Berechne $x_3$</p>
+<p>Berechne $x_1,\ x_3\rightarrow freier Parameter\Rightarrow x_2=t$<br>
+2.Zeile: $x_3=5$<br>
+1.Zeile: $2x_1+3x_2-x_3\Leftrightarrow2x_1=-1+3x_2+x_3=-1-3t+5=4-3t\Rightarrow x_1=2-\frac{3}{2}t$</p>
+<p>Lsg. (als Vektor):<br>
+$\left(\begin{array}{r}
+x_1\\
+x_2\\
+x_3
+\end{array}\right)=\left(\begin{array}{cl}
+2-\frac{3}{2}t\\
+t\\
+5
+\end{array}\right)$</p>
+<hr>
+<p>2)</p>
+<p>$\left(\begin{array}{cccc|c}
+ 0 &amp; -2 &amp; 7 &amp; -1 &amp; -6 \\
+ 2 &amp; 3 &amp; -3 &amp; 2 &amp; 8 \\
+ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 2 \\
+\end{array}\right)$
+$\left.\begin{array}{c}
+ \color{red}{\leftharpoonup}\\
+ \color{red}{\text{Tausche }I\text{ mit }II}\\
+ \color{red}{\leftharpoondown}\\
+\end{array}\right.$<br>
+$\quad\\
+\Longleftrightarrow\left(\begin{array}{cccc|c}
+ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 2 \\
+ 2 &amp; 3 &amp; -3 &amp; 2 &amp; 8 \\
+ 0 &amp; -2 &amp; 7 &amp; -1 &amp; -6 \\
+\end{array}\right)$
+$\quad\\\left.\begin{array}{c}
+ \quad\\
+ \color{red}{-2I}\\
+ \quad\\
+\end{array}\right.
+\Longleftrightarrow\left(\begin{array}{cccc|c}
+ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 2 \\
+ 0 &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+ 0 &amp; -2 &amp; 7 &amp; -1 &amp; -6 \\
+\end{array}\right)$
+$\quad\\\left.\begin{array}{c}
+ \quad\\
+ \quad\\
+ \color{red}{+2II}\\
+\end{array}\right.
+\Longleftrightarrow\left(\begin{array}{cccc|c}
+ 1 &amp; 1 &amp; 0 &amp; 1 &amp; 2 \\
+ 0 &amp; 1 &amp; -3 &amp; 0 &amp; 4 \\
+ 0 &amp; 0 &amp; 1 &amp; -1 &amp; 2 \\
+\end{array}\right)\\
+\quad\quad\quad\quad\quad\color{red}{\text{Zeilen-Stufenform}}$</p>
+<p>$\color{red}{\text{Rang: ist } r=3\ (3\text{ Zeilen}\neq0)}\\
+\color{red}{n-r=4-3=1\text{ freier Parameter}}\\
+\color{red}{x_4\Rightarrow\text{ freier Parameter. }}x_4=t$</p>
+<p>$x_3-x_4=2\Rightarrow x_3-t=2\Leftrightarrow x_3=2+t$
+$x_2-3x_3=4\Leftrightarrow x_2=4+3\cdot(2+t)\Leftrightarrow x_2=10+3t$
+$x_1+x_2+x_4=2\Rightarrow x_1+(10+3t)+t=2\Leftrightarrow x_1=2-(10-3t)-t=-8-4t$</p>
+<p>Lsg:<br>
+$\left(\begin{array}{r}
+x_1\\
+x_2\\
+x_3\\
+x_4
+\end{array}\right)=\left(\begin{array}{cl}
+-8-4t\\
+10-3t\\
+2-t\\
+t
+\end{array}\right)$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='sectionva'></a></p>
+<h2 id="Vorlesungsaufgabe(07.10.18):">Vorlesungsaufgabe(07.10.18):<a class="anchor-link" href="#Vorlesungsaufgabe(07.10.18):">&#182;</a></h2><p>Lösen Sie</p>
+<p>$\left(\begin{array}{ccc|c}
+ 1 &amp; -4 &amp; 1 &amp; 0 &amp; -3\\
+ 2 &amp; -8 &amp; 4 &amp; -1 &amp; -5\\
+ -1 &amp; 4 &amp; 5 &amp; -2 &amp; 6 \\
+\end{array}\right)$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>$\left(\begin{array}{ccc|c}
+ 1 &amp; -4 &amp; 1 &amp; 0 &amp; -3\\
+ 2 &amp; -8 &amp; 4 &amp; -1 &amp; -5\\
+ -1 &amp; 4 &amp; 5 &amp; -2 &amp; 6 \\
+\end{array}\right)$
+$\left.\begin{array}{c}
+ \quad\\
+ \color{red}{-2I}\\
+ \color{red}{+I}\\
+\end{array}\right.$<br>
+$\Longleftrightarrow\left(\begin{array}{ccc|c}
+ 1 &amp; -4 &amp; 1 &amp; 0 &amp; -3\\
+ 0 &amp; 0 &amp; 2 &amp; -1 &amp; 1\\
+ 0 &amp; 0 &amp; 6 &amp; -2 &amp; 5 \\
+\end{array}\right)$
+$\left.\begin{array}{c}
+ \quad\\
+ \quad\\
+ \color{red}{-3II}\\
+\end{array}\right.
+\Longleftrightarrow\left(\begin{array}{ccc|c}
+ 1 &amp; -4 &amp; 1 &amp; 0 &amp; -3\\
+ 0 &amp; 0 &amp; 2 &amp; -1 &amp; 1\\
+ 0 &amp; 0 &amp; 0 &amp; 1 &amp; 2 \\
+\end{array}\right)$</p>
+<p>$\color{red}{n-r=4-3=1\text{ freier Parameter}}\\
+\color{red}{x_2\text{ freier Parameter. }\ x_2=t}$</p>
+<p>$$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section67'></a></p>
+<h2 id="6.7-Satz:">6.7 Satz:<a class="anchor-link" href="#6.7-Satz:">&#182;</a></h2><p>kjl b</p>
 
 </div>
 </div>

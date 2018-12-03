@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung9</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Mathe-A Dr.Wyss-WS18/19-Vorlesung12</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <style type="text/css">
@@ -11822,7 +11822,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.9 - 02.11.2018&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Vorlesung - Nr.12- 14.11.2018&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11839,7 +11839,7 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Vorlesung - Nr.9 - 02.11.2018
+<pre>Vorlesung - Nr.12- 14.11.2018
 </pre>
 </div>
 </div>
@@ -11854,11 +11854,13 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='section0'></a></p>
 <h1 id="Inhaltsverzeichnis:"><a href="#section0">Inhaltsverzeichnis</a>:<a class="anchor-link" href="#Inhaltsverzeichnis:">&#182;</a></h1><ol>
-<li><a href="#section5">Kapitel 5 Komplexe Zahlen</a><br>
- 5.4.  <a href="#section54">Definition und Eigenschaften</a><br>
- 5.5.  <a href="#section55">Rechenoperationen</a><br>
- 5.V.  <a href="#sectionva">Vorlesungsaufgabe(02.11.18)</a><br>
- 5.6.  <a href="#section56">Eigenschaften von $e^{j\varphi}$</a>        </li>
+<li><a href="#section7">Kapitel 7 Vektorenrechnung in $\mathbb{R}^n$</a><br>
+ 7.6.  <a href="#section76">(weitere) Rechenregeln in $\mathbb{R}^n$</a><br>
+ 7.7.  <a href="#section77">Betrag eines Vektors</a><br>
+ 7.8.  <a href="#section78">Einheitsvektoren</a><br>
+ 7.V.  <a href="#sectionva">Vorlesungsaufgabe(14.11.18)</a><br>
+ 7.9.  <a href="#section79">Das Skalarprodukt</a><br>
+ 7.10. <a href="#section710">Orthogonalität(senkrecht)</a>    </li>
 </ol>
 
 </div>
@@ -11868,55 +11870,14 @@ Klausur: Do. 7.3  $\rightarrow$ kein TR</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section5'></a></p>
-<h2 id="Kapitel-5-Komplexe-Zahlen:">Kapitel 5 Komplexe Zahlen:<a class="anchor-link" href="#Kapitel-5-Komplexe-Zahlen:">&#182;</a></h2><p><u></u>
-<a id='section54'></a></p>
-<h2 id="5.4-L&#246;sung-quadratischer-Gleichung-in-$\mathbb{C}$:">5.4 L&#246;sung quadratischer Gleichung in $\mathbb{C}$:<a class="anchor-link" href="#5.4-L&#246;sung-quadratischer-Gleichung-in-$\mathbb{C}$:">&#182;</a></h2><p>$z^2+pz+q=0\quad;\ p,q\in\mathbb{C}\\
-\Leftrightarrow (z+(\frac{p}{2}))^2=\frac{p}{4}-q\quad\vert \color{red}{w=z+\frac{p}{2}\ d.h.}\\
-\Leftrightarrow z=-\frac{p}{2}\pm w, \color{red}{w\text{ Lsg. von }w^2=\frac{p^2}{4}-q}\\
-\quad\\
-"z=-\frac{p}{2}\pm\sqrt{\frac{p^2}{4}-q}"\text{ d.h. }w=\pm\sqrt{\frac{p^2}{4}-q}$</p>
-<p>Problem: Löse $w^2=a$ für $a\in\mathbb{C}$<br>
-<u>1 Fall</u> $a\in\mathbb{R}$<br>
-$a\geq0:\ w=\pm\sqrt{a}\quad \in\mathbb{R}\\
-a&lt;0:\ w=\pm\sqrt{\vert a\vert}j\\
-("\pm\sqrt{a}=\sqrt{-\vert a\vert}=\pm\sqrt{\vert a\vert}\cdot\sqrt{-1}=\pm\sqrt{\vert a\vert}j")\\
-\text{Probe: }w^2=(\pm\sqrt{\vert a\vert}j)^2=\vert a\vert j^2=-\vert a\vert=a\\
-Bsp:\ w^2=-3\\
-\Rightarrow w=\pm\sqrt{3}j$<br>
-<u>1 Fall</u> $a\in\mathbb{C}$<br>
-Ansatz: $w=x+yj$<br>
-$\Rightarrow w^2=(x+yj)^2=x^2+2xyj+y^2j^2=x^2-y^2+2xyj\quad \overset{!}{=}a\quad\quad ("\overset{!}{=}"\text{ unser Ziel, soll entsprechen})\\
-\Leftrightarrow \left\{\begin{array}{rrr}
-x^2-y^2 &amp; =\text{ Re }a &amp; \quad\text{löse Gl.sys nach }x\text{ und }y\\
-2xy &amp; =\text{ Im }a &amp; \\
-\end{array}\right.$</p>
-<p>Bsp:<br>
-$w^2=-j,\ w=x+yj\\
-w^2=x^2-y^2+2xyj\overset{!}{=}-j\\
-\Leftrightarrow \left\{\begin{array}{rrr}
-x^2-y^2=0 &amp; \color{orange}{I} &amp; \leftarrow\text{Realteil}\\
-2xy=-1 &amp; \color{orange}{II} &amp; \leftarrow\text{Imaginärteil}\\
-\end{array}\right.\\
-\quad\\
-\color{orange}{II} \Rightarrow x\neq0\ und\ y\neq0,\ y=\frac{-1}{2x}\rightarrow\text{Einsetzen in }\color{orange}{I}\\
-\color{orange}{\text{2. Formel nach y umstellen}}\\
-\Rightarrow x^2-(\frac{-1}{2x})^2=0\\
-\Leftrightarrow x^2-\frac{-1}{4x}=0\quad\vert\cdot x^2\\
-\Leftrightarrow x^4-\frac{1}{4}=0\\
-\Leftrightarrow x^4=\frac{1}{4}\quad(u=x^2\Leftrightarrow u^2=\frac{1}{4}\Rightarrow u=\frac{1}{2}\ \vee\ u=-\frac{1}{2})\\
-\Leftrightarrow x^2=\frac{1}{2}\\
-\text{Weil }x=\text{Re}z\text{ also }x\in\mathbb{R},\text{ also }x^2\geq0\\
-\Rightarrow x^2=\frac{1}{2}\\
-\Rightarrow x_1=\frac{1}{\sqrt{2}}\ \vee\ x_2=\frac{-1}{\sqrt{2}}\\
-\text{Einsetzen in }\color{red}{y=\frac{-1}{2x}}\\
-\Rightarrow x_1=\frac{1}{\sqrt{2}}\Rightarrow y_1=\frac{-1}{2\frac{1}{\sqrt{2}}}=\frac{-1}{\sqrt{2}}\\
-x_2\frac{-1}{\sqrt{2}}\Rightarrow y_2=\frac{-1}{2\frac{-1}{\sqrt{2}}}=\frac{1}{\sqrt{2}}\\
-\Rightarrow w_1=\frac{1}{\sqrt{2}}+\frac{-1}{\sqrt{2}}j,\ w_2=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j\\
-\text{Beachte: }w_2=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j=-w_1\\
-d.h.\ w^2=-j \text{ hat die Lsgen}\\
-w=\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j\quad\text{ und }\quad w=-(\frac{-1}{\sqrt{2}}+\frac{1}{\sqrt{2}}j)
-$</p>
+<p><a id='section7'></a></p>
+<h2 id="Kapitel-7-Vektorenrechnung-in-$\mathbb{R}^n$:">Kapitel 7 Vektorenrechnung in $\mathbb{R}^n$:<a class="anchor-link" href="#Kapitel-7-Vektorenrechnung-in-$\mathbb{R}^n$:">&#182;</a></h2><p><u></u>
+<a id='section76'></a></p>
+<h2 id="7.6-(weitere)-Rechenregeln-in-$\mathbb{R}^n$:">7.6 (weitere) Rechenregeln in $\mathbb{R}^n$:<a class="anchor-link" href="#7.6-(weitere)-Rechenregeln-in-$\mathbb{R}^n$:">&#182;</a></h2><p>$(\vec{a}+\vec{b})+\vec{c}=\vec{a}+(\vec{b}+\vec{c})\\
+\vec{a}+\vec{b}=\vec{b}+\vec{a}\\
+r(s\vec{a})=(rs)\vec{a}\quad, r,s\in\mathbb{R}\\
+(r+s)\vec{a}=r\vec{a}+s\vec{a}\\
+r(\vec{a}+\vec{b})=r\vec{a}+r\vec{b}$</p>
 
 </div>
 </div>
@@ -11925,39 +11886,59 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section55'></a></p>
-<h2 id="5.5-Polarformen-komplexer-Zahlen:">5.5 Polarformen komplexer Zahlen:<a class="anchor-link" href="#5.5-Polarformen-komplexer-Zahlen:">&#182;</a></h2><p>$z=x+yj$ ("karthesische Form")</p>
-<p>Graph img phi,r</p>
-<p>$(x,y)$ in Polarkoordinaten:<br>
-$x=r\cos\varphi\\
-y=r\sin\varphi$<br>
-$z=r\cos\varphi+j\cdot r\sin\varphi=r\cdot(\cos\varphi+j\sin\varphi)\\
-r=\sqrt{x^2+y^2}=\vert z\vert$</p>
-<h3 id="$\varphi$-hei&#223;t-Argument-von-$z$:">$\varphi$ hei&#223;t Argument von $z$:<a class="anchor-link" href="#$\varphi$-hei&#223;t-Argument-von-$z$:">&#182;</a></h3><p>$\varphi=\arg z$<br>
-(wie bei Polarkoordinaten: $\varphi$ nicht eindeutig)</p>
-<p>Formel von Euler:</p>
-<p>$e^{j\varphi}=\cos\varphi+j\sin\varphi$ (abkürzung/ nur eine Definition, keine rechnung)<br>
-Damit Polarform von $z$:<br>
-$z=r\cdot e^{j\varphi}, r=\vert z\vert, \varphi=\arg z$</p>
-<h4 id="Bsp:">Bsp:<a class="anchor-link" href="#Bsp:">&#182;</a></h4><p>1) $z=e^{j\frac{\Pi}{3}}\quad$ (d.h. $r=1,\ \varphi=\frac{\Pi}{3}$)<br>
-$z$ in karthesicher Form, $z=x+$?</p>
-<p>$z=e^{j\frac{\Pi}{3}}=\cos(\frac{\Pi}{3})+j\sin(\frac{\Pi}{3})\\
-=\frac{1}{2}+\frac{\sqrt{3}}{2}j$</p>
-<p>IMG GRAPH EINHEITSKREIS PI/3</p>
-<p>2) $z=-1-j\quad$ Polarform?<br>
-$r=\vert z\vert=\sqrt{(-1^2)^2+(-1)^2}=\sqrt{2}$</p>
-<h5 id="Aus-3.6:">Aus 3.6:<a class="anchor-link" href="#Aus-3.6:">&#182;</a></h5><p>$\varphi=\left\{\begin{array}{rr}
-\arccos\frac{x}{r} &amp; \text{wenn }y\geq0\\
--\arccos\frac{x}{r} &amp; \text{wenn }y&lt;0\\
-\end{array}\right.\\
-\quad\\
-y=\text{Im}z=-1&lt;0,\quad x=\text{Re}z=-1\\
-\Rightarrow\varphi= -\arccos\frac{x}{r}=-\underbrace{\arccos\frac{-1}{\sqrt{2}}}_{\frac{3\Pi}{4}}\\
-\Rightarrow\varphi=-\frac{3\Pi}{4}\\
-\Rightarrow z= \sqrt{2}e^{-\frac{3\Pi}{4}j}\\
-$</p>
-<h3 id="Erweiterung:">Erweiterung:<a class="anchor-link" href="#Erweiterung:">&#182;</a></h3><p>IMG GRAPH COS Rechnung</p>
-<p>Graph einheitskreis Lsg -3Pi/4</p>
+<p><a id='section77'></a></p>
+<h2 id="7.7-Betrag-eines-Vektors:">7.7 Betrag eines Vektors:<a class="anchor-link" href="#7.7-Betrag-eines-Vektors:">&#182;</a></h2><p>Die Länge von $\vec{a}\in\mathbb{R}^3$ heißt <u>Betrag</u> $|\vec{a}|$.</p>
+
+<pre><code>IMG QUADER
+
+</code></pre>
+<p>$\vec{a}=\left(\begin{array}{r}a_x\\a_y\\a_z\end{array}\right)$</p>
+<p>Pythagoras zweimal:<br>
+$d^2={a_x}^2+{a_y}^2\\
+|\vec{a}|^2=d^2+{a_z}^2\\
+\Rightarrow|\vec{a}|^2={a_x}^2+{a_y}^2+{a_z}^2\\
+\Rightarrow\color{red}{\boxed{|\vec{a}|=\sqrt{{a_x}^2+{a_y}^2+{a_z}^2}}}$<br>
+ist die Länge/Betrag von $\vec{a}$</p>
+<p>Für $\vec{a}\in\mathbb{R}^2,\ \vec{a}=\left(\begin{array}{r}a_x\\a_y\end{array}\right)$</p>
+
+<pre><code>IMG DREIECK A VEKTOR
+
+</code></pre>
+<p>$\rightarrow|\vec{a}|=\sqrt{{a_x}^2+{a_y}^2}$</p>
+<h3 id="Allgemein-f&#252;r-$\vec{a}\in\mathbb{R},\-\vec{a}=\left(\begin{array}{cr}a_x\\\vdots\\a_n\end{array}\right)$">Allgemein f&#252;r $\vec{a}\in\mathbb{R},\ \vec{a}=\left(\begin{array}{cr}a_x\\\vdots\\a_n\end{array}\right)$<a class="anchor-link" href="#Allgemein-f&#252;r-$\vec{a}\in\mathbb{R},\-\vec{a}=\left(\begin{array}{cr}a_x\\\vdots\\a_n\end{array}\right)$">&#182;</a></h3><p>$\large|\vec{a}|=\sqrt{{a_1}^2+\cdots+{a_n}^2}$</p>
+<p>andere Schreibweise:</p>
+<p>$||\vec{a}||$, "Norm", "euklidische Norm"</p>
+<p><u>Bsp</u></p>
+<p>$\vec{a}=\left(\begin{array}{cr}2\\-3\\1\end{array}\right)\\
+\Rightarrow|\vec{a}|=\sqrt{{2}^2+{-3}^2+{1}^2}\\
+=\sqrt{4+9+1}=\sqrt{14}\rightarrow\text{Länge von }\vec{a}$</p>
+<h3 id="Regeln:">Regeln:<a class="anchor-link" href="#Regeln:">&#182;</a></h3><p>i) $|\vec{a}|=0\Leftrightarrow \vec{a}=\vec{0}$<br>
+ii) $|r\vec{a}|=|r|\cdot|\vec{a}|$ d.h. $r\vec{a}$ ist $|r|$-mal solang wie $\vec{a}$<br>
+ii) $|\vec{a}+\vec{b}|\leq|\vec{a}|+|\vec{b}|$ Dreiecksgleichung  (IMG DREIECK)</p>
+<h4 id="Beweis-zu-ii)">Beweis zu ii)<a class="anchor-link" href="#Beweis-zu-ii)">&#182;</a></h4><p>$|r\vec{a}|=|(ra)|=\sqrt{{r^2{a_1}^2}+\cdot+{r^2{a_n}^2}}=\sqrt{r^2\cdot({a_1}^2+\cdots+{a_n}^2)}=\sqrt{r^2}\cdot\sqrt{{a_1}^2+\cdots+{a_n}^2}=|r|\cdot|\vec{a}|$</p>
+<h3 id="Bsp.">Bsp.<a class="anchor-link" href="#Bsp.">&#182;</a></h3><p>$\left|\left(\begin{array}{cr}8\\8\\4\end{array}\right)\right|=\left|4\cdot|\left(\begin{array}{cr}2\\2\\1\end{array}\right)\right|\\
+=4\cdot\left|\left(\begin{array}{cr}2\\2\\1\end{array}\right)\right|=4\cdot\sqrt{4+4+1}=4\cdot\sqrt{9}=4\cdot3=12$</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a id='section78'></a></p>
+<h2 id="7.8-Einheitsvektoren:">7.8 Einheitsvektoren:<a class="anchor-link" href="#7.8-Einheitsvektoren:">&#182;</a></h2><p>$\vec{a}\in\mathbb{R}^n$ mit Länge $|\vec{a}|=1$ heißt <u>Einheitsvektor</u>. Zu jedem $\vec{a}\neq0$ gibt es den Einheitsvektor in Richtung von $\vec{a}$:</p>
+<p>$\large\color{red}{\boxed{\color{black}{\vec{e_a}=\frac{\vec{a}}{|\vec{a}|}=\frac{1}{|\vec{a}|}\cdot\vec{a}}}}$</p>
+
+<pre><code>img einheitsvektor länge 1 an a vektor
+
+</code></pre>
+<p>check: $|\vec{e_a}|=|\frac{\vec{a}}{|\vec{a}|}|=\frac{1}{|\vec{a}|}\cdot\vec{a}=1$</p>
+<h3 id="Standard--(oder-karthesiche)-Einheitsvektoren">Standard- (oder karthesiche) Einheitsvektoren<a class="anchor-link" href="#Standard--(oder-karthesiche)-Einheitsvektoren">&#182;</a></h3><p>$\vec{e_1}=\left(\begin{array}{cr}1\\0\\0\end{array}\right),\quad\vec{e_2}=\left(\begin{array}{cr}0\\1\\0\end{array}\right),\quad\vec{e_3}=\left(\begin{array}{cr}0\\0\\1\end{array}\right),\quad\in\mathbb{R}^3$</p>
+<h3 id="allgemein-im-$\mathbb{R}^n$:">allgemein im $\mathbb{R}^n$:<a class="anchor-link" href="#allgemein-im-$\mathbb{R}^n$:">&#182;</a></h3><p>$\vec{e_1}=\left(\begin{array}{cr}1\\0\\\vdots\\0\end{array}\right),\quad\vec{e_2}=\left(\begin{array}{cr}0\\1\\\vdots\\0\end{array}\right),\quad\ldots,\quad\vec{e_n}=\left(\begin{array}{cr}0\\\vdots\\0\\1\end{array}\right)$</p>
+<h5 id="Bsp.">Bsp.<a class="anchor-link" href="#Bsp.">&#182;</a></h5><p>$\vec{a}=\left(\begin{array}{cr}7\\-14\\-21\end{array}\right),\quad \vec{e_a}=?\\
+\vec{a}=7\left(\begin{array}{cr}1\\-2\\-3\end{array}\right)\Rightarrow|\vec{a}|=7\cdot\left|\left(\begin{array}{cr}1\\-2\\-3\end{array}\right)\right|=7\sqrt{1+(-2)^2+(-3)^2}=7\sqrt{14}\\
+\Rightarrow\vec{e_a}\frac{1}{\vec{a}}\cdot\vec{a}=\frac{1}{7\sqrt{14}}\cdot7\left(\begin{array}{cr}1\\-2\\-3\end{array}\right)=\frac{1}{\sqrt{14}}\left(\begin{array}{cr}1\\-2\\-3\end{array}\right)$</p>
 
 </div>
 </div>
@@ -11967,9 +11948,11 @@ $</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><a id='sectionva'></a></p>
-<h2 id="Vorlesungsaufgabe(02.11.18):">Vorlesungsaufgabe(02.11.18):<a class="anchor-link" href="#Vorlesungsaufgabe(02.11.18):">&#182;</a></h2><p>Berechnen Sie</p>
-<p>a) karthesiche Form von $\large z= 4e^{\frac{2\Pi}{3}j}$</p>
-<p>b) Polarform von $\large z=\sqrt{12}+2j$</p>
+<h2 id="Vorlesungsaufgabe(14.11.18):">Vorlesungsaufgabe(14.11.18):<a class="anchor-link" href="#Vorlesungsaufgabe(14.11.18):">&#182;</a></h2><p>$P=(1,-1,3),\ Q=(3,0,12),\ R=(-1,4,5)$</p>
+<p>Berechnen Sie $|\vec{a}|$ und $\vec{e_a}$ für</p>
+<p>1) $\vec{a}=\left(\begin{array}{cr}3\\2\sqrt{2}\\-1\end{array}\right)$</p>
+<p>2) $\vec{b}=\left(\begin{array}{cr}-11\\22\\55\end{array}\right)$</p>
+<p>Zusatz: Was ist der Abstand der Punkte $A(1,2,3)$ und $B(3,0,1)$</p>
 
 </div>
 </div>
@@ -11978,13 +11961,15 @@ $</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>a)$\large{r=4,\ \varphi=\frac{2\Pi}{3},\quad z=x+yj\\
-z=4e^{\frac{2\Pi}{3}j}=4\cos(\frac{2\Pi}{3})+j\sin(\frac{2\Pi}{3})\\
-4(-\frac{1}{2})+j4(\frac{\sqrt{3}}{2})\\
-\Rightarrow z=-2+2\sqrt{3}j}\\
-NR:\ \cos(\frac{2\Pi}{3})=-\cos(\frac{\Pi}{3})=-\frac{1}{2}\\
-\sin(\frac{2\Pi}{3})=\sin(\frac{\Pi}{3})=\frac{\sqrt{3}}{2}$</p>
-<p>GRAPH SIN UND COS KURVE</p>
+<h3 id="L&#246;sungen:">L&#246;sungen:<a class="anchor-link" href="#L&#246;sungen:">&#182;</a></h3><p>1) $\vec{a}=\left(\begin{array}{cr}3\\2\sqrt{2}\\-1\end{array}\right)\\
+|\vec{a}|=\sqrt{3^2+(2\sqrt{2})^2+(-1)^2}=\sqrt{9+8+1}=\sqrt{18}=\sqrt{2\cdot9}=3\sqrt{2}\\
+\vec{e_a}=\frac{1}{3\sqrt{2}}\cdot\left(\begin{array}{cr}3\\2\sqrt{2}\\-1\end{array}\right)=\left(\begin{array}{cr}\frac{1}{\sqrt{2}}\\\frac{2}{3}\\\frac{-1}{3\sqrt{2}}\end{array}\right)$</p>
+<p>2) $\vec{b}=\left(\begin{array}{cr}-11\\22\\55\end{array}\right)=11\cdot\left(\begin{array}{cr}-1\\2\\5\end{array}\right)\\
+|\vec{b}|=11\cdot\left|\left(\begin{array}{cr}-1\\2\\5\end{array}\right)\right|=11\sqrt{(-1)^2+2^2+5^2}=11\sqrt{1+4+25}=11\sqrt{30}\\
+\vec{e_b}=\frac{1}{\sqrt{30}}\cdot\left(\begin{array}{cr}-1\\2\\5\end{array}\right)=\left(\begin{array}{cr}-\frac{1}{\sqrt{30}}\\\frac{2}{\sqrt{30}}\\\frac{5}{\sqrt{30}}\end{array}\right)$</p>
+<p><u>Zusatz</u>:<br>
+$A(1,2,3),\quad B(3,0,1)$ Abstand?<br>
+$\vec{b}-\vec{a}=\left(\begin{array}{cr}3\\0\\1\end{array}\right)-\left(\begin{array}{cr}1\\2\\3\end{array}\right)=\left(\begin{array}{cr}2\\-2\\-2\end{array}\right),\quad \text{Abstand}=|\vec{b}-\vec{a}|=\sqrt{12}=2\sqrt{3}$</p>
 
 </div>
 </div>
@@ -11993,9 +11978,18 @@ NR:\ \cos(\frac{2\Pi}{3})=-\cos(\frac{\Pi}{3})=-\frac{1}{2}\\
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>b) $\large{y=\vert z\vert=\sqrt{12+4}=4,\quad y=\text{Im}z\\
-\Rightarrow\varphi=\arccos(\frac{\sqrt{13}}{4})=\arccos(\frac{\sqrt{3}}{2})=\frac{\Pi}{6}\\
-\Rightarrow z=4e^{\frac{\Pi}{6}j}}$</p>
+<p><a id='section79'></a></p>
+<h2 id="7.9-Das-Skalarprodukt:">7.9 Das Skalarprodukt:<a class="anchor-link" href="#7.9-Das-Skalarprodukt:">&#182;</a></h2><p>Für $\vec{a},vec{b}\in\mathbb{R}^n$ <u>Skalarprodukt</u><br>
+$\vec{a}\cdot\vec{b}=\left.\left(\begin{array}{cr}a_1\\\vdots\\a_n\end{array}\right)\cdot\left(\begin{array}{cr}b_1\\\vdots\\b_n\end{array}\right)\qquad\right|\color{red}{\text{!Wichtig Ergebnis ist eine Zahl, kein Vektor.}}\\
+=a_1b_1+a_2b_2+\cdots+a_nb_n$</p>
+<h4 id="Eigenschaften-(Rechenregeln):">Eigenschaften (Rechenregeln):<a class="anchor-link" href="#Eigenschaften-(Rechenregeln):">&#182;</a></h4><p>$(\vec{a}\vec{b})\cdot\vec{c}=\vec{a}\vec{c}+\vec{b}\vec{c}\\
+\vec{a}\cdot(\vec{b}+\vec{c})=\vec{a}\vec{b}+\vec{a}\vec{c}\\
+(r\vec{a})\cdot\vec{b}=r\cdot(\vec{a}\vec{b})=\vec{a}\cdot(r\vec{b})\qquad r\in\mathbb{R}\\
+\vec{a}\vec{b}=\vec{b}\vec{a}$</p>
+<p>Zusammenhang mit Betrag $|\vec{a}|$<br>
+$\vec{a}\cdot\vec{a}=|\vec{a}|^2$ d.h $|\vec{a}|=\sqrt{\vec{a}\cdot\vec{a}}$</p>
+<p><u>Beweis</u>:<br>
+$\vec{a}\cdot\vec{a}=\left(\begin{array}{cr}a_1\\\vdots\\a_n\end{array}\right)\cdot\left(\begin{array}{cr}a_1\\\vdots\\a_n\end{array}\right)=a_1^2+a_2^2+\cdots+a_n^2=|\vec{a}|^2$</p>
 
 </div>
 </div>
@@ -12004,14 +11998,27 @@ NR:\ \cos(\frac{2\Pi}{3})=-\cos(\frac{\Pi}{3})=-\frac{1}{2}\\
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><a id='section56'></a></p>
-<h2 id="5.6-Eigenschaften-von-$e^{j\varphi}$:">5.6 Eigenschaften von $e^{j\varphi}$:<a class="anchor-link" href="#5.6-Eigenschaften-von-$e^{j\varphi}$:">&#182;</a></h2><p>1) $\large \left\vert e^{j\varphi}\right\vert=1$, d.h. $e^{j\varphi}$ liegt auf Einheitskreis</p>
-<p>2) $\large e^{j(\varphi+\psi)}=e^{j\varphi}\cdot e^{j(\psi}$</p>
-<p>3) $\large e^{j\cdot k\varphi}=(e^{j\varphi})^k$</p>
-<p>4) $\large \overline{e^{j\varphi}}=e^{-j\varphi}=\frac{1}{e^{j\varphi}}$</p>
-<p>5) $\large e^{j\frac{\Pi}{2}}=j,\ e^{j\Pi}=-1$</p>
-<p>6) $\large \cos\varphi=\text{Re}(e^{j\varphi})=\frac{1}{2}(e^{j\varphi}+e^{-j\varphi})\\
-\large\sin\varphi=\text{Im}(e^{j\varphi})=\frac{1}{2j}(e^{j\varphi}+e^{-j\varphi})$</p>
+<p><a id='section710'></a></p>
+<h2 id="7.10-Orthogonalit&#228;t(senkrecht):">7.10 Orthogonalit&#228;t(senkrecht):<a class="anchor-link" href="#7.10-Orthogonalit&#228;t(senkrecht):">&#182;</a></h2><p>$\vec{a}$ ist <u>orthogonal</u> zu $\vec{b}$ wenn $\vec{a}$ senkrecht zu $\vec{b}$ ist:<br>
+<b>Schreibweise</b>: $\vec{a}\perp\vec{b}$<br>
+Berechnung mit Skalarprodukt:<br>
+$\vec{a}\perp\vec{b}\Leftrightarrow\vec{a}\cdot\vec{b}=0$</p>
+<h3 id="Beweis:-nach-Pythagoras">Beweis: nach Pythagoras<a class="anchor-link" href="#Beweis:-nach-Pythagoras">&#182;</a></h3>
+<pre><code>IMG DREIECK RECHTERWINKEL
+
+</code></pre>
+<p>$\rightarrow\vec{a}\perp\vec{b}\Leftrightarrow|\vec{b}-\vec{a}|^2=|\vec{a}|^2+|\vec{b}|^2$</p>
+<p>$|\vec{b}-\vec{a}|^2=(\vec{b}-\vec{a})\cdot(\vec{b}-\vec{a})\\
+=\vec{b}\cdot\vec{b}-\vec{a}\cdot\vec{b}-\vec{b}\cdot\vec{a}+\vec{a}\cdot\vec{a}\\
+=|\vec{a}|^2+|\vec{b}|^2-2\vec{a}\vec{b}$</p>
+<p>Also: $|\vec{b}-\vec{a}|^2\underbrace{=}_{\color{red}{\Leftrightarrow\vec{a}\perp\vec{b}}}|\vec{a}|^2+|\vec{b}|^2\Leftrightarrow\vec{a}\cdot\vec{b}=0$</p>
+<h4 id="Bsp:">Bsp:<a class="anchor-link" href="#Bsp:">&#182;</a></h4><p>1) $\vec{a}=\left(\begin{array}{cr}2\\-3\\1\end{array}\right),\quad \vec{b}=\left(\begin{array}{cr}4\\2\\-2\end{array}\right)\\
+\quad\\
+\Rightarrow \vec{a}\cdot\vec{b}=2\cdot4-3\cdot2+1\cdot(-2)=8-6-2=0\\
+\Rightarrow \vec{a}\perp\vec{b}\\
+\quad\\
+\vec{c}=\left(\begin{array}{cr}1\\-1\\1\end{array}\right)\Rightarrow\vec{a}\cdot\vec{c}=2+3+1=6\neq0\\
+\Rightarrow \vec{a}\not\perp\vec{c}$</p>
 
 </div>
 </div>
